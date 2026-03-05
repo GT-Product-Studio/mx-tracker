@@ -335,7 +335,7 @@ export function DangerBoySection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-            className="hidden lg:block flex-shrink-0 w-[220px]"
+            className="hidden lg:block flex-shrink-0 w-[320px]"
           >
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
