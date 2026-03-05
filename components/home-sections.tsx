@@ -10,33 +10,111 @@ import { formatLapTime, getRankColor } from '@/lib/utils'
 export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
     <section className="relative -mt-16 overflow-hidden bg-bg">
-      <div className="mx-auto grid h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-0 px-6 pt-20 lg:px-8">
+      {/* Animated background layers */}
+
+      {/* Diagonal speed lines — looping CSS animation */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={`line-${i}`}
+            className="absolute h-[1px] bg-gradient-to-r from-transparent via-accent/20 to-transparent"
+            style={{
+              top: `${12 + i * 12}%`,
+              left: '-100%',
+              width: `${30 + Math.random() * 40}%`,
+              transform: 'rotate(-15deg)',
+            }}
+            animate={{ x: ['0%', '350%'] }}
+            transition={{
+              duration: 4 + i * 0.8,
+              repeat: Infinity,
+              ease: 'linear',
+              delay: i * 0.6,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Floating dirt particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={`dust-${i}`}
+            className="absolute rounded-full"
+            style={{
+              width: 1.5 + Math.random() * 3,
+              height: 1.5 + Math.random() * 3,
+              background: i % 3 === 0 ? 'rgba(0, 210, 106, 0.4)' : 'rgba(255, 255, 255, 0.15)',
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+            }}
+            animate={{
+              y: [0, -30 - Math.random() * 60, 0],
+              x: [0, 10 + Math.random() * 30, 0],
+              opacity: [0, 0.8, 0],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 4,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: Math.random() * 5,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Radial green glow behind video area */}
+      <div
+        className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] rounded-full pointer-events-none hidden lg:block"
+        style={{
+          background: 'radial-gradient(circle, rgba(0, 210, 106, 0.08) 0%, transparent 70%)',
+          filter: 'blur(60px)',
+        }}
+      />
+
+      {/* Subtle bottom-left glow */}
+      <div
+        className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full pointer-events-none"
+        style={{
+          background: 'radial-gradient(circle, rgba(0, 210, 106, 0.05) 0%, transparent 70%)',
+          filter: 'blur(80px)',
+        }}
+      />
+
+      <div className="relative z-10 mx-auto grid h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-0 px-6 pt-20 lg:px-8">
         {/* Left — Text + Logo */}
         <div className="flex flex-col justify-center">
-          {/* Logo */}
+          {/* Logo with scale-in */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut' }}
+            initial={{ opacity: 0, scale: 0.8, x: -30 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto mb-6" />
           </motion.div>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: 30, filter: 'blur(8px)' }}
+            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+            transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
             className="text-[clamp(1.5rem,3vw,2.25rem)] font-bold leading-tight text-white"
           >
             Track your rides.<br />
-            <span className="text-accent">Chase the leaderboard.</span>
+            <motion.span
+              className="text-accent inline-block"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
+            >
+              Chase the leaderboard.
+            </motion.span>
           </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
             className="mt-4 max-w-md text-base text-white/50 sm:text-lg"
           >
             Built with 2x AMA Champion Haiden Deegan. Log laps, compete on leaderboards, and take on Danger Boy Challenges.
@@ -45,50 +123,61 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.35, ease: 'easeOut' }}
+            transition={{ duration: 0.5, delay: 0.45, ease: 'easeOut' }}
             className="mt-8 flex gap-4"
           >
             {isLoggedIn ? (
               <Link
                 href="/laps/new"
-                className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
+                className="group relative rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
               >
                 Log a Lap
               </Link>
             ) : (
               <Link
                 href="/signup"
-                className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
+                className="group relative rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
               >
                 Get Started — It&apos;s Free
               </Link>
             )}
             <Link
               href="/challenges"
-              className="rounded-lg border border-white/20 px-8 py-3.5 text-sm font-medium text-white hover:border-white/40 transition-colors"
+              className="rounded-lg border border-white/20 px-8 py-3.5 text-sm font-medium text-white transition-all hover:border-accent/50 hover:text-accent hover:shadow-lg hover:shadow-accent/10 hover:-translate-y-0.5"
             >
               Danger Boy Challenges
             </Link>
           </motion.div>
 
-          {/* Social proof / stats strip */}
+          {/* Social proof / stats strip — staggered count-up feel */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="mt-10 flex gap-8 text-white/40 text-sm"
           >
-            <div><span className="text-white font-bold text-lg">648</span> Tracks</div>
-            <div><span className="text-white font-bold text-lg">250+</span> Riders</div>
-            <div><span className="text-accent font-bold text-lg">Free</span> to Start</div>
+            {[
+              { val: '648', label: 'Tracks', color: 'text-white' },
+              { val: '250+', label: 'Riders', color: 'text-white' },
+              { val: 'Free', label: 'to Start', color: 'text-accent' },
+            ].map((stat, i) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.7 + i * 0.1 }}
+              >
+                <span className={`${stat.color} font-bold text-lg`}>{stat.val}</span> {stat.label}
+              </motion.div>
+            ))}
           </motion.div>
         </div>
 
         {/* Right — Video (bigger, taller) */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.92, y: 20 }}
+          initial={{ opacity: 0, scale: 0.88, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
+          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="hidden lg:flex justify-end items-center"
         >
           <div className="relative h-[85vh] max-h-[800px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
@@ -104,6 +193,8 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             >
               <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
             </video>
+            {/* Subtle green gradient at bottom of video */}
+            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg/60 to-transparent" />
           </div>
         </motion.div>
       </div>
