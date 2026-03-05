@@ -149,7 +149,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
         }}
       />
 
-      <div className="relative z-10 mx-auto flex h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl flex-col lg:grid lg:grid-cols-2 lg:items-center gap-0 px-6 pt-20 lg:px-8">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col lg:grid lg:h-screen lg:max-h-[900px] lg:min-h-[650px] lg:grid-cols-2 lg:items-center gap-0 px-6 pt-20 pb-12 lg:pb-0 lg:px-8">
         {/* Mobile header — Haiden Deegan name */}
         <div className="lg:hidden mb-4">
           <motion.p
