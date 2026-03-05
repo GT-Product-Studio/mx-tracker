@@ -10,7 +10,8 @@
   <!-- Main text -->
   <text x="2" y="50" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-style="italic" font-size="58" fill="white" letter-spacing="-1" transform="skewX(-6)">BRAAP</text>
   <!-- Exhaust dots -->
-  <circle cx="270" cy="30" r="3" fill="#00D26A" opacity="0.8"/>
-  <circle cx="282" cy="25" r="2" fill="#00D26A" opacity="0.5"/>
-  <circle cx="290" cy="20" r="1.5" fill="#00D26A" opacity="0.3"/>
+  <circle cx="265" cy="32" r="6" fill="#00D26A" opacity="0.9"/>
+  <circle cx="280" cy="24" r="4.5" fill="#00D26A" opacity="0.65"/>
+  <circle cx="292" cy="17" r="3" fill="#00D26A" opacity="0.4"/>
+  <circle cx="299" cy="12" r="1.8" fill="#00D26A" opacity="0.25"/>
 </svg>
