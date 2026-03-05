@@ -237,67 +237,68 @@ export function DangerBoySection() {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        {/* Top: Section label + name hero-style */}
-        <FadeInView>
-          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
-            Powered by
-          </p>
-          <h2 className="font-heading text-6xl font-bold leading-[0.85] sm:text-7xl lg:text-8xl tracking-tight">
-            Haiden<br />
-            <span className="text-accent">Deegan</span>
-          </h2>
-          <p className="mt-4 text-white/30 text-sm font-medium tracking-wide">
-            <a href="https://instagram.com/dangerboydeegan" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
-              @dangerboydeegan
-            </a>
-            {' · '}2M followers{' · '}Monster Energy Yamaha Star Racing
-          </p>
-        </FadeInView>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr,280px] gap-12 lg:gap-16 items-center">
+          {/* Left — all text content */}
+          <div>
+            <FadeInView>
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
+                Powered by
+              </p>
+              <h2 className="font-heading text-6xl font-bold leading-[0.85] sm:text-7xl lg:text-8xl tracking-tight">
+                Haiden<br />
+                <span className="text-accent">Deegan</span>
+              </h2>
+              <p className="mt-4 text-white/30 text-sm font-medium tracking-wide">
+                <a href="https://instagram.com/dangerboydeegan" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                  @dangerboydeegan
+                </a>
+                {' · '}2M followers{' · '}Monster Energy Yamaha Star Racing
+              </p>
+            </FadeInView>
 
-        {/* Middle: Stats row — horizontal, bold */}
-        <div className="mt-14 flex flex-wrap gap-x-12 gap-y-6">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
-              className="flex items-center gap-4"
-            >
-              <span className="font-heading text-5xl sm:text-6xl font-bold text-gold">{stat.value}</span>
-              <span className="text-sm text-white/50 leading-tight max-w-[140px]">{stat.label}</span>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Bottom: Description + CTA, alongside the reel video */}
-        {/* Bottom: Description + CTA alongside reel video */}
-        <div className="mt-16 grid gap-10 lg:grid-cols-[1fr,auto] lg:gap-16 items-end">
-          <SlideInLeft>
-            <p className="max-w-lg text-lg text-white/50 leading-relaxed">
-              Haiden isn&apos;t just an ambassador — he sets every challenge you compete against.
-              Beat his target times, climb the leaderboard, earn bragging rights. The fastest 250 rider on the planet is waiting.
-            </p>
-            <div className="mt-8 flex items-center gap-4">
-              <Link
-                href="/challenges"
-                className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
-              >
-                Take on a Challenge
-              </Link>
-              <Link
-                href="/leaderboard"
-                className="rounded-lg border border-white/15 px-8 py-3.5 text-sm font-medium text-white/70 transition-all hover:border-accent/40 hover:text-accent"
-              >
-                View Leaderboard
-              </Link>
+            {/* Stats row */}
+            <div className="mt-14 flex flex-wrap gap-x-12 gap-y-6">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
+                  className="flex items-center gap-4"
+                >
+                  <span className="font-heading text-5xl sm:text-6xl font-bold text-gold">{stat.value}</span>
+                  <span className="text-sm text-white/50 leading-tight max-w-[140px]">{stat.label}</span>
+                </motion.div>
+              ))}
             </div>
-          </SlideInLeft>
 
-          {/* Reel video */}
+            {/* Description + CTAs */}
+            <SlideInLeft>
+              <p className="mt-12 max-w-lg text-lg text-white/50 leading-relaxed">
+                Haiden isn&apos;t just an ambassador — he sets every challenge you compete against.
+                Beat his target times, climb the leaderboard, earn bragging rights. The fastest 250 rider on the planet is waiting.
+              </p>
+              <div className="mt-8 flex items-center gap-4">
+                <Link
+                  href="/challenges"
+                  className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
+                >
+                  Take on a Challenge
+                </Link>
+                <Link
+                  href="/leaderboard"
+                  className="rounded-lg border border-white/15 px-8 py-3.5 text-sm font-medium text-white/70 transition-all hover:border-accent/40 hover:text-accent"
+                >
+                  View Leaderboard
+                </Link>
+              </div>
+            </SlideInLeft>
+          </div>
+
+          {/* Right — Reel video */}
           <FadeInView delay={0.2}>
-            <div className="relative w-[240px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10 mx-auto lg:mx-0"
+            <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10 mx-auto lg:mx-0"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
             >
               <video
