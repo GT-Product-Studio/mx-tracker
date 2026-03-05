@@ -270,9 +270,9 @@ export function DangerBoySection() {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr,380px] gap-12 lg:gap-16 items-center">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
           {/* Left — text content */}
-          <div>
+          <div className="flex-1 min-w-0">
             <FadeInView>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
                 Powered by
@@ -329,15 +329,15 @@ export function DangerBoySection() {
             </SlideInLeft>
           </div>
 
-          {/* Right — Haiden portrait */}
+          {/* Right — Haiden portrait (skinny, like hero reels) */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-            className="hidden lg:flex items-center"
+            initial={{ opacity: 0, scale: 0.92 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
+            className="hidden lg:block flex-shrink-0 w-[220px]"
           >
-            <div className="relative h-[70vh] max-h-[700px] w-full rounded-2xl overflow-hidden ring-1 ring-white/10"
+            <div className="relative aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
             >
               <Image
