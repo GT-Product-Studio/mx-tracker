@@ -220,7 +220,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
   )
 }
 
-/* ---------- Powered by Danger Boy ---------- */
+/* ---------- Powered by Haiden Deegan ---------- */
 export function DangerBoySection() {
   const stats = [
     { value: '2x', label: 'AMA Pro MX 250 Champion' },
@@ -229,84 +229,86 @@ export function DangerBoySection() {
   ]
 
   return (
-    <section className="relative overflow-hidden py-24">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-          {/* Left: Text content */}
+    <section className="relative overflow-hidden py-28 sm:py-36">
+      {/* Background accent */}
+      <div
+        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(0, 210, 106, 0.04) 0%, transparent 70%)', filter: 'blur(80px)' }}
+      />
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-8">
+        {/* Top: Section label + name hero-style */}
+        <FadeInView>
+          <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
+            Powered by
+          </p>
+          <h2 className="font-heading text-6xl font-bold leading-[0.85] sm:text-7xl lg:text-8xl tracking-tight">
+            Haiden<br />
+            <span className="text-accent">Deegan</span>
+          </h2>
+          <p className="mt-4 text-white/30 text-sm font-medium tracking-wide">
+            <a href="https://instagram.com/dangerboydeegan" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+              @dangerboydeegan
+            </a>
+            {' · '}2M followers{' · '}Monster Energy Yamaha Star Racing
+          </p>
+        </FadeInView>
+
+        {/* Middle: Stats row — horizontal, bold */}
+        <div className="mt-14 flex flex-wrap gap-x-12 gap-y-6">
+          {stats.map((stat, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.1 + i * 0.1 }}
+              className="flex items-center gap-4"
+            >
+              <span className="font-heading text-5xl sm:text-6xl font-bold text-gold">{stat.value}</span>
+              <span className="text-sm text-white/50 leading-tight max-w-[140px]">{stat.label}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Bottom: Description + CTA, alongside the reel video */}
+        <div className="mt-16 grid gap-10 lg:grid-cols-[1fr,auto] lg:gap-20 items-end">
           <SlideInLeft>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-4">
-                Powered by
-              </p>
-              <h2 className="font-heading text-4xl font-bold leading-tight sm:text-5xl">
-                Haiden Deegan
-              </h2>
-              <p className="mt-2 text-lg text-white/40 font-medium">@dangerboydeegan</p>
-              <p className="mt-6 text-text-muted leading-relaxed max-w-lg">
-                Haiden isn&apos;t just an ambassador — he sets the challenges you compete against.
-                Every target time comes straight from the 2x AMA Champion. Beat his time, earn bragging rights.
-              </p>
-
-              <div className="mt-10 flex flex-col gap-4">
-                {stats.map((stat, i) => (
-                  <div key={i} className="flex items-baseline gap-3">
-                    <span className="font-heading text-3xl font-bold text-gold">{stat.value}</span>
-                    <span className="text-sm text-text-muted">{stat.label}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-10 flex items-center gap-4">
-                <Link
-                  href="/challenges"
-                  className="rounded-lg bg-accent px-6 py-3 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
-                >
-                  Take on a Challenge
-                </Link>
-                <a
-                  href="https://instagram.com/dangerboydeegan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-text-muted hover:text-accent transition-colors"
-                >
-                  @dangerboydeegan
-                </a>
-              </div>
+            <p className="max-w-lg text-lg text-white/50 leading-relaxed">
+              Haiden isn&apos;t just an ambassador — he sets every challenge you compete against.
+              Beat his target times, climb the leaderboard, earn bragging rights. The fastest 250 rider on the planet is waiting.
+            </p>
+            <div className="mt-8 flex items-center gap-4">
+              <Link
+                href="/challenges"
+                className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
+              >
+                Take on a Challenge
+              </Link>
+              <Link
+                href="/leaderboard"
+                className="rounded-lg border border-white/15 px-8 py-3.5 text-sm font-medium text-white/70 transition-all hover:border-accent/40 hover:text-accent"
+              >
+                View Leaderboard
+              </Link>
             </div>
           </SlideInLeft>
 
-          {/* Right: Image collage */}
-          <FadeInView delay={0.15}>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-xl">
-                <Image
-                  src="/images/deegan/deegan-sx-27.jpg"
-                  alt="Haiden Deegan whip"
-                  fill
-                  quality={100}
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex flex-col gap-3">
-                <div className="relative aspect-square overflow-hidden rounded-xl">
-                  <Image
-                    src="/images/deegan/deegan-sx-13.jpg"
-                    alt="Haiden Deegan holeshot"
-                    fill
-                    quality={100}
-                    className="object-cover"
-                  />
-                </div>
-                <div className="relative aspect-square overflow-hidden rounded-xl">
-                  <Image
-                    src="/images/deegan/deegan-1.jpg"
-                    alt="Haiden Deegan"
-                    fill
-                    quality={100}
-                    className="object-cover"
-                  />
-                </div>
-              </div>
+          {/* Small reel preview */}
+          <FadeInView delay={0.2}>
+            <div className="relative w-[200px] aspect-[9/16] rounded-xl overflow-hidden ring-1 ring-white/10 hidden lg:block"
+              style={{ boxShadow: '0 0 40px rgba(0, 210, 106, 0.1)' }}
+            >
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/images/deegan/deegan-hero-poster.jpg"
+                className="h-full w-full object-cover"
+              >
+                <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
+              </video>
             </div>
           </FadeInView>
         </div>
