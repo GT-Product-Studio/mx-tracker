@@ -10,16 +10,27 @@ import { formatLapTime, getRankColor } from '@/lib/utils'
 export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
     <section className="relative -mt-16 h-screen min-h-[600px] max-h-[900px] overflow-hidden">
-      <Image
-        src="/images/deegan/deegan-sx-18.jpg"
-        alt="Haiden Deegan — Supercross action"
-        fill
-        priority
-        quality={100}
-        className="object-cover object-center"
-      />
+      {/* Video background */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      >
+        <source src="/videos/braap_hero.mp4" type="video/mp4" />
+        {/* Fallback image if video fails */}
+        <Image
+          src="/images/deegan/deegan-sx-18.jpg"
+          alt="Haiden Deegan — Supercross action"
+          fill
+          priority
+          quality={100}
+          className="object-cover object-center"
+        />
+      </video>
       {/* Dark gradient overlay — heavier at bottom for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
 
       <div className="relative z-10 flex h-full flex-col justify-end pb-20 px-4">
         <div className="mx-auto w-full max-w-7xl">
