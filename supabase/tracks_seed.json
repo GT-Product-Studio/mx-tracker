@@ -1,0 +1,6482 @@
+[
+  {
+    "name": "Glen Helen Raceway",
+    "city": "San Bernardino",
+    "state": "California",
+    "lat": 34.1553,
+    "lng": -117.3798,
+    "type": "motocross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Fox Raceway",
+    "city": "Pala",
+    "state": "California",
+    "lat": 33.3694,
+    "lng": -117.0894,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Hangtown (Prairie City)",
+    "city": "Rancho Cordova",
+    "state": "California",
+    "lat": 38.5869,
+    "lng": -121.1744,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Thunder Valley MX Park",
+    "city": "Lakewood",
+    "state": "Colorado",
+    "lat": 39.715,
+    "lng": -105.1289,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "High Point Raceway",
+    "city": "Mt. Morris",
+    "state": "Pennsylvania",
+    "lat": 39.7456,
+    "lng": -79.9778,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "RedBud MX",
+    "city": "Buchanan",
+    "state": "Michigan",
+    "lat": 41.8303,
+    "lng": -86.3572,
+    "type": "motocross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Southwick MX (The Wick 338)",
+    "city": "Southwick",
+    "state": "Massachusetts",
+    "lat": 42.0553,
+    "lng": -72.7706,
+    "type": "motocross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Spring Creek MX Park",
+    "city": "Millville",
+    "state": "Minnesota",
+    "lat": 44.2247,
+    "lng": -92.2847,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Washougal MX Park",
+    "city": "Washougal",
+    "state": "Washington",
+    "lat": 45.5806,
+    "lng": -122.3178,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Unadilla MX",
+    "city": "New Berlin",
+    "state": "New York",
+    "lat": 42.6234,
+    "lng": -75.3347,
+    "type": "motocross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Budds Creek MX Park",
+    "city": "Mechanicsville",
+    "state": "Maryland",
+    "lat": 38.4411,
+    "lng": -76.7494,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Ironman Raceway",
+    "city": "Crawfordsville",
+    "state": "Indiana",
+    "lat": 39.9544,
+    "lng": -86.92,
+    "type": "motocross",
+    "difficulty": 4,
+    "pro_circuit": true
+  },
+  {
+    "name": "Angel Stadium",
+    "city": "Anaheim",
+    "state": "California",
+    "lat": 33.8003,
+    "lng": -117.8827,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "AT&T Stadium",
+    "city": "Arlington",
+    "state": "Texas",
+    "lat": 32.7473,
+    "lng": -97.0945,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "NRG Stadium",
+    "city": "Houston",
+    "state": "Texas",
+    "lat": 29.6847,
+    "lng": -95.4107,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Lucas Oil Stadium",
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "lat": 39.7601,
+    "lng": -86.1639,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "Florida",
+    "lat": 27.9759,
+    "lng": -82.5033,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Daytona International Speedway",
+    "city": "Daytona Beach",
+    "state": "Florida",
+    "lat": 29.1872,
+    "lng": -81.0715,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Rice-Eccles Stadium",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "lat": 40.7599,
+    "lng": -111.8486,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Empower Field at Mile High",
+    "city": "Denver",
+    "state": "Colorado",
+    "lat": 39.7439,
+    "lng": -105.0201,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "MetLife Stadium",
+    "city": "East Rutherford",
+    "state": "New Jersey",
+    "lat": 40.8128,
+    "lng": -74.0742,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Lumen Field",
+    "city": "Seattle",
+    "state": "Washington",
+    "lat": 47.5952,
+    "lng": -122.3316,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Nissan Stadium",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "lat": 36.1665,
+    "lng": -86.7713,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "State Farm Stadium",
+    "city": "Glendale",
+    "state": "Arizona",
+    "lat": 33.5276,
+    "lng": -112.2626,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Camping World Stadium",
+    "city": "Orlando",
+    "state": "Florida",
+    "lat": 28.5392,
+    "lng": -81.4029,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Mercedes-Benz Stadium",
+    "city": "Atlanta",
+    "state": "Georgia",
+    "lat": 33.7554,
+    "lng": -84.401,
+    "type": "supercross",
+    "difficulty": 5,
+    "pro_circuit": true
+  },
+  {
+    "name": "Milestone MX Park",
+    "city": "Riverside",
+    "state": "California",
+    "lat": 33.8764,
+    "lng": -117.2789,
+    "type": "practice",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Starwest MX Park",
+    "city": "Lake Elsinore",
+    "state": "California",
+    "lat": 33.6189,
+    "lng": -117.3556,
+    "type": "practice",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Club MX",
+    "city": "Chesterfield",
+    "state": "South Carolina",
+    "lat": 34.715,
+    "lng": -80.0667,
+    "type": "practice",
+    "difficulty": 4,
+    "pro_circuit": false
+  },
+  {
+    "name": "Baker's Factory",
+    "city": "Cairo",
+    "state": "Georgia",
+    "lat": 30.8775,
+    "lng": -84.205,
+    "type": "practice",
+    "difficulty": 4,
+    "pro_circuit": false
+  },
+  {
+    "name": "Atmore Motocross Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Big Red MotoX",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Chris Cross MX",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cloverdale Heart of Dixie Motocross Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Corner Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Crossbone MX Ranch",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "DodgeCity MX",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Irvington Motorsports Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "JB Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lower Alabama Motocross Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "McLarty MX",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mill Creek Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Monster Mountain MX Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Noah\u2019s Motopark",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Phenix City Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pleasant Hill Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Red Dirt Road MX Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Riverside Motocross",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Roaring Hills ATV Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Southern Supercross Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Ridge Riding Park",
+    "city": "",
+    "state": "Alabama",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jodhpur Motocross Track (Kincaid Race Park)",
+    "city": "",
+    "state": "Alaska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Arizona Cycle Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Arizona OHV Parks",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "ET Motopark",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Grinding Stone Sports Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Happy Track Motocross",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Havasu Motocross Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mesquite MX Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto Grande MX",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Motoland MX Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Nomads Motocross &amp; ATV Club",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ocotillo Raceway",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pima Motorsports Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Speedworld Raceway Park",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Raceway",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Whiplash Offroad Racing",
+    "city": "",
+    "state": "Arizona",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Challenger Motocross Park",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lost Creek Park",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "River Ridge Motocross",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Riverfront ATV Park",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sherwood Motocross",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sundance Motocross",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "White River 870 Motocross Track",
+    "city": "",
+    "state": "Arkansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Adelanto Motor Plex",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Argyll MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "AV Motoplex Motocross Ride Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Barona Oaks Motocross Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cahuilla Creek Motocross",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cal City MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Club Moto Motocross Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Competitive Edge MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "E-Street MX",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hangtown Motocross Track",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hollister Hills Offroad",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Elsinore Motocross Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "LV Raceway",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mammoth Motocross",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Milestone Ranch MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MMX Racing Motocross",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Perris Raceway",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Piru MX",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Racetown 395",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sand Hill Motocross",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Santa Clara Motocross",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sunrise MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Tulare Cycle Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Zaca Station MX Park",
+    "city": "",
+    "state": "California",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Aztec Family Raceway",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Grand Junction Motor Speedway",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "High Altitude Sport Riders Club",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "IMI Motorsports Complex",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Olympic Motocross Park",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pawnee Cycle Club",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sweney Cycle Park",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Valley MX",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Valley Dirt Riders",
+    "city": "",
+    "state": "Colorado",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Central Cycle Club",
+    "city": "",
+    "state": "Connecticut",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Connecticut River Motocross",
+    "city": "",
+    "state": "Connecticut",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Milford Riders Club",
+    "city": "",
+    "state": "Connecticut",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mototown USA",
+    "city": "",
+    "state": "Connecticut",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thomaston Dam",
+    "city": "",
+    "state": "Connecticut",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Blue Diamond MX",
+    "city": "",
+    "state": "Delaware",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Delmarva Motorsports Park",
+    "city": "",
+    "state": "Delaware",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Snake Creek MX",
+    "city": "",
+    "state": "Delaware",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ace MotoX Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Adrenaline Motorsports Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bartow Cycle Sports",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bithlo Motorsports Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bostwick Creek MX Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "County Line MX",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Croom Motorcycle Area",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dade City Motocross",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Double WW Ranch Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "East Bay Motocross",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Florida Motoplex",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Florida Tracks and Trails",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Gatorback Cycle Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hardrock Cycle Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mesa Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Miami Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moroso Motorsports Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Motocross of Marion County",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "North Florida Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Orlando MX Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Palm Beach International Raceway",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pax Trax Motocross",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Santa Rosa Motocross",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Seminole Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sunshine Motocross",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sunshine State MX Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Utopia Motocross Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Waldo Motorsports Park",
+    "city": "",
+    "state": "Florida",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "A Place to Ride MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Action Motocross Park",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Aonia Pass Motocross",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bremen Race Park",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dirt Farm MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Durhamtown Plantation",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fast Track MX Ranch",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Georgia Practice Facility",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "High Falls Supercross",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "ICRMX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lane Farm MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lazy River MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Millsaps Training Facility",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto Mountain ATV Park",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Paradise Offroad Park",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rollin Haven Motocross",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Talking Rock Arena",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "TenMile MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Twin Peaks MX",
+    "city": "",
+    "state": "Georgia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Kahuku Motocross Track",
+    "city": "",
+    "state": "Hawaii",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Keiki Motocross",
+    "city": "",
+    "state": "Hawaii",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Clay Peak Motorcycle Park",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fossil Bowl MX",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Owyhee Motorcycle Club",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rock Creek Race Track",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Skyline MX Park",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "White Knuckle Racing",
+    "city": "",
+    "state": "Idaho",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Archview Motocross Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Buffalo Range Riding Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Byron\u2019s Motorsports Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Crossroads MX and Off-Road Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Espy Motocross and ATV Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Euro Raceway",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fox Valley Offroad",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Green Acres MX Park",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Harrier Motocross",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Indian Hills MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Joliet MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "KI Tracks",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lewiston Motocross",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lincoln Trail Motorsports",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Little Egypt Off Road",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MC Motopark",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "McMotoPark Motocross Track",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Middle Creek MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Midwest Motocross Club",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Muddy Waters MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Paradise Motopark",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South Central MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South Fork Dirt Riders",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sunset Ridge MX",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Track at Holzhauers",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Waterman Indoor Motocross",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Williams Hill Pass OHV",
+    "city": "",
+    "state": "Illinois",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Backwoods Motorsports",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Badlands Offroad Park",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cooters Hole MX",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dirt Motocross Race Park",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "FMX Paradise",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Haspin Acres MX Park",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hoosier Hilltoppers Motocross",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Leisure Time GP",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Motoland",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mule Ridge Park",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mustang Sallys Park",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Parsons Motocross Compound",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pleasure Riders M/C",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Podium One Motocross",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Posey Motocross",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Motoplex",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wabash Cannonball Motorcycle Club",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wildcat Creek MX",
+    "city": "",
+    "state": "Indiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fan Ridge MX",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "FV Moto X",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hawkeye Downs Motocross",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Northland MX",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Razors Edge MX",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Riverside Raceway",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandy Corners MX",
+    "city": "",
+    "state": "Iowa",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bar 2 Bar MX, LLC",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bar2Bar MX Park",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dragoon Creek Motocross Park",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Green Acres Motocross",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Heartland Park MX",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Inman Motocross",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jeeps Cycle Club",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Platter Hill MX Park",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Racers Edge MX Park",
+    "city": "",
+    "state": "Kansas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Back 40 MX",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ballance Moto-X",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Beaver Junction MX",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Big Rock Offroad Park",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Black Rock Motocross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Boyd County Supercross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bucks Run MX &amp; ATV Park",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cub Run MX Playground",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "D Track Motocross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Daniel Boone Motocross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dunn\u2019s Playground Motocross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Earlywine Racing Indoor Motocross",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Echo Valley MX",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hidden Hills Offroad",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "HotShot MX",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Little Sturgis Motoplex",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mountain Parkway Offroad",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Valentine Valley MX",
+    "city": "",
+    "state": "Kentucky",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bonnet Carre Spillway",
+    "city": "",
+    "state": "Louisiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cypress Creek MX",
+    "city": "",
+    "state": "Louisiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "West Monroe Motocross Park",
+    "city": "",
+    "state": "Louisiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wildwood MX",
+    "city": "",
+    "state": "Louisiana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Eaton Mountain Motocross",
+    "city": "",
+    "state": "Maine",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Helmond\u2019s Motocross Park",
+    "city": "",
+    "state": "Maine",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX 207",
+    "city": "",
+    "state": "Maine",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Valley Motorsports Park",
+    "city": "",
+    "state": "Maine",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Budds Creek Motocross Park",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Green Ridge State Forest",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Promised Land Motocross",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Southern Maryland ATV Park",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Speed Citi",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Landing MX",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wicomico Motorsports Park",
+    "city": "",
+    "state": "Maryland",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Beartown State Forest",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "BRO MX",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Capeway Rovers Motocross",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Crow Hill Motocross",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Motocross 338",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX23 Motocross",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "October Mountain State Forest",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pittsfield State Forest",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Tolland State Forest",
+    "city": "",
+    "state": "Massachusetts",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Baja Acres MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Battle Creek Motorcycle Club",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Big Air Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cadillac Motorcycle Club",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dutch Sport Park MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fenton Indoor Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Freelin MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Grattan Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Little Valley MX Park",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Log Road Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Log Road Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "McCulloch\u2019s Pro-MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Milan Cycle City Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mooreland Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MPX Racing",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Muskegon Sandbox",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ogemaw Sport and Trail",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pro Source Indoor MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Red Bud USA",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandbox MX",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Stateline Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "ThunderBird Race Park",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Valley Motocross",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Valley Raceway",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "X-Mas Family Motorsports Park",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Zambons MX Park",
+    "city": "",
+    "state": "Michigan",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Berm Benders Raceway",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Buffalo River Race Park",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Echo Valley MX Park",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Elko Speedway",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hurricane Hills MX Park",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jordan Motocross",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "KC Race Promotions",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Little Falls Raceway",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mankato Motocross",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Meadow Valley MX",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Midway Motocross",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto-Dome",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MotoCity Raceway",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Spring Creek MX",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Victory Creek MX",
+    "city": "",
+    "state": "Minnesota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Barnyard Mud Boggers",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Golden Pine Raceway",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Interlincs MX",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Interlincs SX",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Miller Motorsports",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX886",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Red Creek Offroad",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Speedtown MX",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Stone County MX",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Corner Lot Resort",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Wilderness Trails",
+    "city": "",
+    "state": "Mississippi",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "4-State Moto Complex",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Action Motocross",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Adrenaline Motorplex",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Boogerwoods MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Branson USA MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Buffalo Motocross",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cabool MX Racing",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Challenge Trax",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Eagles Roost MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hard Knox Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Highway 47 MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Highway 65 MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hill Top MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "HLR Motorsports Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Kahoka MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "KCMOTO",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Legends Raceway MX",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Letz Go Nutz",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mid-America MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Midwest Extreme Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Outback MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Semo Raceway",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sky High MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Soggy Bottom MX Park",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thayer Extreme Motocross",
+    "city": "",
+    "state": "Missouri",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bummer MX",
+    "city": "",
+    "state": "Montana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dairyland MX Park",
+    "city": "",
+    "state": "Montana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "E.C.D.R. Complex",
+    "city": "",
+    "state": "Montana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Electric City Dirt Riders",
+    "city": "",
+    "state": "Montana",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Abbott Motocross Track",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fiddler Creek MX Park Midwest Raceway",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fox Run Motocross",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lodgepole Valley Motocross Track",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Off Road Ranch ATV &amp; Motocross",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Platte Valley Dirt Riders",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pleasanton Motocross Grounds",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Soaring Edge Motocross Park",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Spring Ranch Motocross",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "White Sands Raceway",
+    "city": "",
+    "state": "Nebraska",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Livfast Exit 28 Motocross and FMX Park",
+    "city": "",
+    "state": "Nevada",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mustang Motorplex",
+    "city": "",
+    "state": "Nevada",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Canaan Lions Motocross",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jolly Roger Motorsports Park",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX 101",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "NH Motocross Park",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rivers Edge Campground &amp; ATV Park",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rock Pile Motocross Park",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Winchester Speedpark",
+    "city": "",
+    "state": "New Hampshire",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Atco Motocross Park",
+    "city": "",
+    "state": "New Jersey",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Englishtown Raceway",
+    "city": "",
+    "state": "New Jersey",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mt. Pleasant MX",
+    "city": "",
+    "state": "New Jersey",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "New Jersey Offroad Vehicle Park",
+    "city": "",
+    "state": "New Jersey",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Motosports",
+    "city": "",
+    "state": "New Jersey",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Aztec Motocross",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Clovis MX",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Gallup OHV MX Park",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Heaven Motorsports Park",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hidden Hills MX Park",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moriarty Motocross",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Running Water Draw MX",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandia Motocross Park",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Tulie Motocross",
+    "city": "",
+    "state": "New Mexico",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ace Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "ADK MX",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Area 51 Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Broome-Tioga Sports Center",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Claverack MX Track",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cohocton Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Diamondback MX",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Freedom Motocross Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Frozen Ocean Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hogback Hill Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Island Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lembo Lake ATV Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto Masters Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Paradox MX",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Paradox MX / Hickory Hill MX",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Parker MX",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rocky Roost Offroad Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Royal Mountain Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Silver Springs Moto Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Silver Springs Motocross Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South Woods Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Ridge Cycle Park",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Twister Valley Sport Complex",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Unadilla Motocross",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Walden Motocross Track",
+    "city": "",
+    "state": "New York",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "421-MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "5 Points MX Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Blackjack MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Brushy Mountain Motorsports Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Catheys Creek Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Center Road Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "CGRMX Track",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "County Line MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cow Branch MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Creswell Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Crystal Coast MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Daniels Ridge Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Devils Ridge Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dirt City USA Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "East Bend Motorsports",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Elizabeth City Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Halfmoon MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hog Heaven MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ironclad Motorsports",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jacksonville MX Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Gaston Motocross",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Made for Play MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Midsouth MotoX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MidsouthMotoX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Morgans Corner MX Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "North Carolina Motorsports Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Outback MotorSports Complex",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "River City MX Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Robins Ridge Motorsports Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rocky Springs MX",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rolling Hills Cycle Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Speed Compound Motocross Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Valley Motopark",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wide Open MX Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Zoo City Motor Sports Park",
+    "city": "",
+    "state": "North Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Turtle River Motocross Park",
+    "city": "",
+    "state": "North Dakota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Area 330 MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Beans Bike Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Briarcliff MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Broken Spokes",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Chilitown MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Crow Canyon MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Delta Raceway",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dirt County MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dirt World Motocross",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "East Fork MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fast Traxx Motoplex",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fly MX Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Gary Semics Motocross School Track",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hot Rods MX Racing",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Bailee MX Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Malvern Motocross Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Meadowlarks Motocross Club",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX Riverside",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "North East Motocross Complex",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ohio International Raceway",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Outlaw MX Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pusheta Creek MX Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ram Jam Sportsplex",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandusky Valley Riders Motocross &amp; Trails",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Scenic Highlands MX Park",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Split Rails SX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "TV Land MX",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wildwood Lake Raceway",
+    "city": "",
+    "state": "Ohio",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Area 51 Motocross Park",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Big Red Offroad Park",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cross Bar Ranch",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Gas MX",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Draper Off-Road",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto City Race Park",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Oklahoma Motorsports Complex MX",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ponca City Grand National MX",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Reynard Raceway",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sooner State Cycle Park",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South 75 Motocross Park",
+    "city": "",
+    "state": "Oklahoma",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Albany MX Park",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Eugene MX Park",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hindsight MX",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Madras MX",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mountain View MX Park",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Prineville Adventure Park",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rogue Valley Motocross",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Salem Arenacross",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sand Valley MX",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thursday Night Motocross",
+    "city": "",
+    "state": "Oregon",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Breezewood Proving Grounds",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Creekside Motocross",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Doublin Gap MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dutchmen MX Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Evansville MX Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Happy Rambers Motorcycle Club",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Headquarters Moto Facility",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "High Voltage MX Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hilltop Lodge Motocross Farm",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Irish Valley MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Maple Shade Motocross",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Miles Mountain MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MX 573 Practice Track",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pagoda MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Plumcreek Valley MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pymatuning Holeshot Raceway",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rausch Creek MX and ATV Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rock Run ATV Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rocket Raceway",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sleepy Hollow Motocross Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Slippery Rock Dunes",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Switchback MX",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Lost Trails ATV Park",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Weekend Warriors Riding Club",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wild Ride Motocross and Quad Track",
+    "city": "",
+    "state": "Pennsylvania",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Battery Park Offroad Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Camp Coker MX Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Carolina Adventure World",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "DNA Motocross Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Grassroots MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Harleyville Motocross Facility",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "I-20 Motorsports",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Iron City Motorsports Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lakeside MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lonesome Valley MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mole Creek MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Myrtle Beach Motorsports Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Orangeburg Motoplex",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Paradise MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pine Grove Motocross",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Possum Kingdom MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Revolution Motocross Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South of the Border MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Strawberry Hill Motocross",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "TNT Motorsports Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Turkey Creek MX",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wheel Crazy Motorsports Park",
+    "city": "",
+    "state": "South Carolina",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sioux Valley Cycle Club",
+    "city": "",
+    "state": "South Dakota",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dry Hill Raceway",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fast Farms MX Park",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Honda Hills",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "I-40 Motocross",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "I-81 Motorsports Park",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Meadow Creek Motocross",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Muddy Creek Raceway",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MVP Motocross",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "MxWildFlower",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "R3 Motoworx",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandstone MX",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Shiloh MX Park",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Speedzone Raceway Park",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "The Mountain MX",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Valley Motocross",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Trails End Campground",
+    "city": "",
+    "state": "Tennessee",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Austin/Del Valle Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Badlands Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Barnwell Mountain",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bluebonnet MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Boise d\u2019 Arc Trails",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Bowers MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Buffalo Valley MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Burleson Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cherokee Cycle Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Clutch City Motocross",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cross Creek Cycle Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Cycle Ranch Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "East Fork MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Freestone County Raceway",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Greenville MX Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Highlands Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Holeshot Valley MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Irondog MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Johnny Nash Indoor Arena",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Just For Kids Cycle Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Whitney Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Los Fresnos Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mesquite Hills MX Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Montalba Motocross",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Nocona MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Oak Hill MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Outback Adventure Track",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Red River Motorcycle Trails",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "River Valley MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Skeeter MX Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Southwest Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Splendora Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Stone Creek Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Swan MX Raceway Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Three Palms MX",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "TMX Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Village Creek Motocross",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "West Texas Motocross Park",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Xtreme MX Motocross Track",
+    "city": "",
+    "state": "Texas",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jordan River OHV Park",
+    "city": "",
+    "state": "Utah",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rocky Mountain Raceways",
+    "city": "",
+    "state": "Utah",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "SGMX Moto Playground",
+    "city": "",
+    "state": "Utah",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Rider Hill Motocross",
+    "city": "",
+    "state": "Vermont",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Birch Creek Motorsports Park",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Lake Sugar Tree MX Park",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pro Sport Motocross",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ross Motocross Ranch Resort",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "South Fork Motocross Park",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Whitten MX and Trails",
+    "city": "",
+    "state": "Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Airway Heights MX",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Burnt Ridge MX",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Eddieville MX Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ephrata Raceway Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Evergreen Motocross Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hannegan Speedway",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Horn Rapids MX Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pacific Raceways",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Riverdale Raceway",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Starvation Ridge",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Toes Motocross Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Ward Creek MX",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Washougal MX",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Woodland Motocross Park",
+    "city": "",
+    "state": "Washington",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Burning Rock Outdoor Adventure Park",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Good Evening MX",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Good Evening Raceway",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Hatfield-McCoy Trails",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Jet Mountain-X &amp; Camping",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mason County Motocross",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Moto-Topia MX",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Mountaineer Raceway",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pyramid Valley Raceway",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Thunder Hollow MX",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Tomahawk MX Park",
+    "city": "",
+    "state": "West Virginia",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Arkansaw Cycle Park",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Aztalan Cycle Club",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "CMJ Raceway",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Dyracuse Recreational Park",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fantasy Moto",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Fond Du Lac OHV Park",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Great Lakes MX",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Pine Ridge Raceway",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Sandbox Arena",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Smokey Hollow MX",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Wheeler MX Park",
+    "city": "",
+    "state": "Wisconsin",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Boomtown MX",
+    "city": "",
+    "state": "Wyoming",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  },
+  {
+    "name": "Casper Dirt Riders Motocross",
+    "city": "",
+    "state": "Wyoming",
+    "lat": null,
+    "lng": null,
+    "type": "motocross",
+    "difficulty": 3,
+    "pro_circuit": false
+  }
+]

@@ -2,7 +2,12 @@ import { createClient } from '@/lib/supabase-server'
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
+function getStripe() {
+  if (!process.env.STRIPE_SECRET_KEY) {
+    throw new Error('STRIPE_SECRET_KEY not configured')
+  }
+  return new Stripe(process.env.STRIPE_SECRET_KEY)
+}
 
 export async function GET() {
   try {
@@ -19,6 +24,7 @@ export async function GET() {
       .eq('id', user.id)
       .single()
 
+    const stripe = getStripe()
     let customerId = profile?.stripe_customer_id
 
     if (!customerId) {
