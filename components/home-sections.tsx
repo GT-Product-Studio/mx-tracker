@@ -284,9 +284,9 @@ export function DangerBoySection() {
           alt=""
           fill
           quality={100}
-          className="object-cover object-top opacity-15"
+          className="object-cover object-top opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-transparent" />
       </div>
 
       {/* Background accent */}
