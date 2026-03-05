@@ -10,6 +10,7 @@ import { formatLapTime, getRankColor } from '@/lib/utils'
 const HERO_REELS = [
   { src: '/images/deegan/deegan-hero.mp4', poster: '/images/deegan/deegan-hero-poster.jpg' },
   { src: '/images/deegan/deegan-section.mp4', poster: '/images/deegan/deegan-section-poster.jpg' },
+  { src: '/images/deegan/deegan-reel3.mp4', poster: '/images/deegan/deegan-reel3-poster.jpg' },
 ]
 
 /* ---------- Hero Reel Carousel ---------- */
