@@ -345,7 +345,13 @@ export function DangerBoySection() {
           </div>
 
           {/* Right — Haiden portrait */}
-          <FadeInView delay={0.2} className="hidden lg:block">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+            className="hidden lg:flex items-center"
+          >
             <div className="relative h-[70vh] max-h-[700px] w-full rounded-2xl overflow-hidden ring-1 ring-white/10"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
             >
@@ -357,7 +363,7 @@ export function DangerBoySection() {
                 className="object-cover object-top"
               />
             </div>
-          </FadeInView>
+          </motion.div>
         </div>
       </div>
     </section>
