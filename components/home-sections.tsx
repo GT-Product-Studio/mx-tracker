@@ -272,7 +272,8 @@ export function DangerBoySection() {
         </div>
 
         {/* Bottom: Description + CTA, alongside the reel video */}
-        <div className="mt-16">
+        {/* Bottom: Description + CTA alongside reel video */}
+        <div className="mt-16 grid gap-10 lg:grid-cols-[1fr,auto] lg:gap-16 items-end">
           <SlideInLeft>
             <p className="max-w-lg text-lg text-white/50 leading-relaxed">
               Haiden isn&apos;t just an ambassador — he sets every challenge you compete against.
@@ -293,6 +294,24 @@ export function DangerBoySection() {
               </Link>
             </div>
           </SlideInLeft>
+
+          {/* Reel video */}
+          <FadeInView delay={0.2}>
+            <div className="relative w-[240px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10 mx-auto lg:mx-0"
+              style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
+            >
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/images/deegan/deegan-section-poster.jpg"
+                className="h-full w-full object-cover"
+              >
+                <source src="/images/deegan/deegan-section.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </FadeInView>
         </div>
       </div>
     </section>
