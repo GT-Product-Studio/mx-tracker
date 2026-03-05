@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" fill="none">
+  <!-- Stylized BRAAP wordmark with speed lines -->
+  <text x="0" y="48" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="56" fill="white" letter-spacing="-2">BRAAP</text>
+  <!-- Speed lines -->
+  <line x1="0" y1="58" x2="180" y2="58" stroke="#00D26A" stroke-width="3"/>
+  <line x1="200" y1="58" x2="240" y2="58" stroke="#00D26A" stroke-width="3"/>
+  <line x1="250" y1="58" x2="265" y2="58" stroke="#00D26A" stroke-width="3"/>
+</svg>

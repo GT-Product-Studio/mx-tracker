@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 70" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00D26A"/>
+      <stop offset="1" stop-color="#00FF82"/>
+    </linearGradient>
+  </defs>
+  <!-- Slanted background bar -->
+  <polygon points="0,65 300,65 300,60 0,60" fill="url(#g)"/>
+  <!-- Main text -->
+  <text x="2" y="50" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-style="italic" font-size="58" fill="white" letter-spacing="-1" transform="skewX(-6)">BRAAP</text>
+  <!-- Exhaust dots -->
+  <circle cx="270" cy="30" r="3" fill="#00D26A" opacity="0.8"/>
+  <circle cx="282" cy="25" r="2" fill="#00D26A" opacity="0.5"/>
+  <circle cx="290" cy="20" r="1.5" fill="#00D26A" opacity="0.3"/>
+</svg>

@@ -9,26 +9,39 @@ import { formatLapTime, getRankColor } from '@/lib/utils'
 /* ---------- Hero ---------- */
 export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
-    <section className="relative -mt-16 min-h-screen overflow-hidden bg-bg">
-      <div className="mx-auto flex h-screen max-h-[900px] min-h-[600px] w-full max-w-7xl items-center px-4 pt-16">
-        {/* Left — Text */}
-        <div className="flex-1 pr-8">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="font-heading text-[clamp(4rem,10vw,9rem)] font-bold leading-[0.85] tracking-tighter text-white"
+    <section className="relative -mt-16 overflow-hidden bg-bg">
+      <div className="mx-auto grid h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-0 px-6 pt-20 lg:px-8">
+        {/* Left — Text + Logo */}
+        <div className="flex flex-col justify-center">
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
           >
-            BRAAP
-          </motion.h1>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto mb-6" />
+          </motion.div>
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-            className="mt-6 max-w-md text-lg text-white/60 sm:text-xl"
+            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
+            className="text-[clamp(1.5rem,3vw,2.25rem)] font-bold leading-tight text-white"
           >
-            Track your rides. Chase the leaderboard. Built with the fastest 250 rider on the planet.
+            Track your rides.<br />
+            <span className="text-accent">Chase the leaderboard.</span>
           </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25, ease: 'easeOut' }}
+            className="mt-4 max-w-md text-base text-white/50 sm:text-lg"
+          >
+            Built with 2x AMA Champion Haiden Deegan. Log laps, compete on leaderboards, and take on Danger Boy Challenges.
+          </motion.p>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +60,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
                 href="/signup"
                 className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
               >
-                Get Started
+                Get Started — It&apos;s Free
               </Link>
             )}
             <Link
@@ -57,16 +70,30 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
               Danger Boy Challenges
             </Link>
           </motion.div>
+
+          {/* Social proof / stats strip */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="mt-10 flex gap-8 text-white/40 text-sm"
+          >
+            <div><span className="text-white font-bold text-lg">648</span> Tracks</div>
+            <div><span className="text-white font-bold text-lg">250+</span> Riders</div>
+            <div><span className="text-accent font-bold text-lg">Free</span> to Start</div>
+          </motion.div>
         </div>
 
-        {/* Right — Video (portrait, native resolution) */}
+        {/* Right — Video (bigger, taller) */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
-          className="hidden lg:block flex-shrink-0"
+          initial={{ opacity: 0, scale: 0.92, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
+          className="hidden lg:flex justify-end items-center"
         >
-          <div className="relative h-[70vh] max-h-[700px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl shadow-accent/10 ring-1 ring-white/10">
+          <div className="relative h-[85vh] max-h-[800px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
+            style={{ boxShadow: '0 0 80px rgba(0, 210, 106, 0.15), 0 25px 50px rgba(0, 0, 0, 0.5)' }}
+          >
             <video
               autoPlay
               muted
@@ -82,8 +109,10 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
       </div>
 
       {/* Mobile — video below text */}
-      <div className="lg:hidden px-4 pb-12 -mt-8">
-        <div className="relative mx-auto max-w-sm aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl shadow-accent/10 ring-1 ring-white/10">
+      <div className="lg:hidden px-4 pb-12">
+        <div className="relative mx-auto max-w-xs aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
+          style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.12), 0 20px 40px rgba(0, 0, 0, 0.4)' }}
+        >
           <video
             autoPlay
             muted
