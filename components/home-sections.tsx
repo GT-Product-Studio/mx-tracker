@@ -277,13 +277,25 @@ export function DangerBoySection() {
 
   return (
     <section className="relative overflow-hidden py-28 sm:py-36">
+      {/* Mobile background — Haiden portrait faded behind text */}
+      <div className="absolute inset-0 lg:hidden pointer-events-none">
+        <Image
+          src="/images/deegan/deegan-portrait.jpg"
+          alt=""
+          fill
+          quality={100}
+          className="object-cover object-top opacity-15"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/80 to-bg/40" />
+      </div>
+
       {/* Background accent */}
       <div
         className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{ background: 'radial-gradient(circle, rgba(0, 210, 106, 0.04) 0%, transparent 70%)', filter: 'blur(80px)' }}
       />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-8">
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
           {/* Left — text content */}
           <div className="flex-1 min-w-0">
@@ -349,7 +361,7 @@ export function DangerBoySection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
-            className="flex-shrink-0 w-full max-w-[280px] mx-auto lg:mx-0 lg:w-[320px] lg:max-w-none"
+            className="hidden lg:block flex-shrink-0 lg:w-[320px]"
           >
             <div className="relative aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
