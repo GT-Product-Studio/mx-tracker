@@ -236,14 +236,15 @@ export function DangerBoySection() {
           <SlideInLeft>
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-4">
-                Powered by Danger Boy
+                Powered by
               </p>
               <h2 className="font-heading text-4xl font-bold leading-tight sm:text-5xl">
-                Built with the fastest 250 rider on the planet.
+                Haiden Deegan
               </h2>
+              <p className="mt-2 text-lg text-white/40 font-medium">@dangerboydeegan</p>
               <p className="mt-6 text-text-muted leading-relaxed max-w-lg">
-                Haiden Deegan isn&apos;t just an ambassador — he sets the challenges you compete against.
-                Every target time comes straight from Danger Boy. Beat his time, earn bragging rights.
+                Haiden isn&apos;t just an ambassador — he sets the challenges you compete against.
+                Every target time comes straight from the 2x AMA Champion. Beat his time, earn bragging rights.
               </p>
 
               <div className="mt-10 flex flex-col gap-4">
