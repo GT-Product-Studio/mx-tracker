@@ -15,6 +15,8 @@ const navLinks = [
 const authLinks = [
   { href: '/laps', label: 'My Laps' },
   { href: '/laps/new', label: 'Log Lap' },
+  { href: '/upload', label: 'Upload' },
+  { href: '/record', label: 'Record' },
 ]
 
 export function Navbar() {

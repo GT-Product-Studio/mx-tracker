@@ -11,10 +11,16 @@
   "dependencies": {
     "@supabase/ssr": "^0.9.0",
     "@supabase/supabase-js": "^2.98.0",
+    "@types/leaflet": "^1.9.21",
+    "@xmldom/xmldom": "^0.8.11",
     "framer-motion": "^12.35.0",
+    "gopro-telemetry": "^1.2.11",
+    "gpmf-extract": "^0.3.2",
+    "leaflet": "^1.9.4",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-leaflet": "^5.0.0",
     "stripe": "^20.4.0"
   },
   "devDependencies": {

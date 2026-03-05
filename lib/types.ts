@@ -23,6 +23,10 @@ export interface Track {
   description: string | null
   image_url: string | null
   approved: boolean
+  start_lat: number | null
+  start_lng: number | null
+  finish_lat: number | null
+  finish_lng: number | null
   created_at: string
 }
 
@@ -66,6 +70,24 @@ export interface ChallengeEntry {
   // Joined
   profiles?: Profile
   laps?: Lap
+}
+
+export interface Session {
+  id: string
+  user_id: string
+  track_id: string | null
+  source: 'gopro' | 'phone' | 'gpx'
+  gps_data: { lat: number; lng: number; speed?: number; altitude?: number; time?: number }[]
+  laps_data: { lapNumber: number; startIndex: number; endIndex: number; time_ms: number; topSpeed: number; avgSpeed: number }[] | null
+  top_speed_mph: number | null
+  avg_speed_mph: number | null
+  total_distance_miles: number | null
+  total_duration_ms: number | null
+  recorded_at: string
+  created_at: string
+  // Joined
+  profiles?: Profile
+  tracks?: Track
 }
 
 export interface Follow {
