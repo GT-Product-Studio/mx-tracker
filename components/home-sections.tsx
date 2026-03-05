@@ -9,37 +9,15 @@ import { formatLapTime, getRankColor } from '@/lib/utils'
 /* ---------- Hero ---------- */
 export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
-    <section className="relative -mt-16 h-screen min-h-[600px] max-h-[900px] overflow-hidden">
-      {/* Video background — Haiden Deegan whip + backflip reel */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/images/deegan/deegan-hero-poster.jpg"
-        className="absolute inset-0 h-full w-full object-cover object-center"
-      >
-        <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
-      </video>
-      {/* Fallback image for browsers that block autoplay */}
-      <Image
-        src="/images/deegan/deegan-hero-poster.jpg"
-        alt="Haiden Deegan — Supercross action"
-        fill
-        priority
-        quality={100}
-        className="object-cover object-center -z-10"
-      />
-      {/* Dark gradient overlay — heavier at bottom for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
-
-      <div className="relative z-10 flex h-full flex-col justify-end pb-20 px-4">
-        <div className="mx-auto w-full max-w-7xl">
+    <section className="relative -mt-16 min-h-screen overflow-hidden bg-bg">
+      <div className="mx-auto flex h-screen max-h-[900px] min-h-[600px] w-full max-w-7xl items-center px-4 pt-16">
+        {/* Left — Text */}
+        <div className="flex-1 pr-8">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="font-heading text-[clamp(4rem,12vw,10rem)] font-bold leading-[0.85] tracking-tighter text-white"
+            className="font-heading text-[clamp(4rem,10vw,9rem)] font-bold leading-[0.85] tracking-tighter text-white"
           >
             BRAAP
           </motion.h1>
@@ -47,9 +25,9 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-            className="mt-4 max-w-lg text-lg text-white/70 sm:text-xl"
+            className="mt-6 max-w-md text-lg text-white/60 sm:text-xl"
           >
-            Track your rides. Chase the leaderboard.
+            Track your rides. Chase the leaderboard. Built with the fastest 250 rider on the planet.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -79,6 +57,43 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
               Danger Boy Challenges
             </Link>
           </motion.div>
+        </div>
+
+        {/* Right — Video (portrait, native resolution) */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.15, ease: 'easeOut' }}
+          className="hidden lg:block flex-shrink-0"
+        >
+          <div className="relative h-[70vh] max-h-[700px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl shadow-accent/10 ring-1 ring-white/10">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              poster="/images/deegan/deegan-hero-poster.jpg"
+              className="h-full w-full object-cover"
+            >
+              <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Mobile — video below text */}
+      <div className="lg:hidden px-4 pb-12 -mt-8">
+        <div className="relative mx-auto max-w-sm aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl shadow-accent/10 ring-1 ring-white/10">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/images/deegan/deegan-hero-poster.jpg"
+            className="h-full w-full object-cover"
+          >
+            <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
