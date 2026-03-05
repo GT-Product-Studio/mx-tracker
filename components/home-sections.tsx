@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { FadeInView, SlideInLeft, ScaleIn } from '@/components/motion'
 import { formatLapTime, getRankColor } from '@/lib/utils'
 
@@ -18,27 +18,24 @@ function HeroReelCarousel({ className, tall }: { className?: string; tall: boole
   const [idx, setIdx] = useState(0)
   const videoRef = useRef<HTMLVideoElement>(null)
 
+  // Swap src and play when idx changes
   useEffect(() => {
     const video = videoRef.current
     if (!video) return
-
-    const handleEnded = () => {
-      setIdx((prev) => (prev + 1) % HERO_REELS.length)
-    }
-
-    video.addEventListener('ended', handleEnded)
-    return () => video.removeEventListener('ended', handleEnded)
-  }, [idx])
-
-  // When idx changes, load and play the new video
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) return
+    video.src = HERO_REELS[idx].src
+    video.poster = HERO_REELS[idx].poster
     video.load()
     video.play().catch(() => {})
   }, [idx])
 
-  const reel = HERO_REELS[idx]
+  // Listen for ended to advance
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    const next = () => setIdx((prev) => (prev + 1) % HERO_REELS.length)
+    video.addEventListener('ended', next)
+    return () => video.removeEventListener('ended', next)
+  }, [])
 
   return (
     <motion.div
@@ -48,30 +45,18 @@ function HeroReelCarousel({ className, tall }: { className?: string; tall: boole
       className={className}
     >
       <div
-        className={`relative ${tall ? 'h-[85vh] max-h-[800px]' : 'max-w-xs'} aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10`}
+        className={`relative ${tall ? 'h-[85vh] max-h-[800px]' : 'w-full max-w-[280px] mx-auto'} aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10`}
         style={{ boxShadow: '0 0 80px rgba(0, 210, 106, 0.15), 0 25px 50px rgba(0, 0, 0, 0.5)' }}
       >
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={idx}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="absolute inset-0"
-          >
-            <video
-              ref={videoRef}
-              autoPlay
-              muted
-              playsInline
-              poster={reel.poster}
-              className="h-full w-full object-cover"
-            >
-              <source src={reel.src} type="video/mp4" />
-            </video>
-          </motion.div>
-        </AnimatePresence>
+        <video
+          ref={videoRef}
+          autoPlay
+          muted
+          playsInline
+          poster={HERO_REELS[0].poster}
+          src={HERO_REELS[0].src}
+          className="h-full w-full object-cover"
+        />
         {/* Subtle gradient at bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg/60 to-transparent z-10" />
         {/* Reel indicator dots */}
