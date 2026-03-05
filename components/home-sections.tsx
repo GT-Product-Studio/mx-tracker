@@ -2,9 +2,91 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { useState, useEffect, useRef } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { FadeInView, SlideInLeft, ScaleIn } from '@/components/motion'
 import { formatLapTime, getRankColor } from '@/lib/utils'
+
+const HERO_REELS = [
+  { src: '/images/deegan/deegan-hero.mp4', poster: '/images/deegan/deegan-hero-poster.jpg' },
+  { src: '/images/deegan/deegan-section.mp4', poster: '/images/deegan/deegan-section-poster.jpg' },
+]
+
+/* ---------- Hero Reel Carousel ---------- */
+function HeroReelCarousel({ className, tall }: { className?: string; tall: boolean }) {
+  const [idx, setIdx] = useState(0)
+  const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+
+    const handleEnded = () => {
+      setIdx((prev) => (prev + 1) % HERO_REELS.length)
+    }
+
+    video.addEventListener('ended', handleEnded)
+    return () => video.removeEventListener('ended', handleEnded)
+  }, [idx])
+
+  // When idx changes, load and play the new video
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) return
+    video.load()
+    video.play().catch(() => {})
+  }, [idx])
+
+  const reel = HERO_REELS[idx]
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.88, y: 30 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+      className={className}
+    >
+      <div
+        className={`relative ${tall ? 'h-[85vh] max-h-[800px]' : 'max-w-xs'} aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10`}
+        style={{ boxShadow: '0 0 80px rgba(0, 210, 106, 0.15), 0 25px 50px rgba(0, 0, 0, 0.5)' }}
+      >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="absolute inset-0"
+          >
+            <video
+              ref={videoRef}
+              autoPlay
+              muted
+              playsInline
+              poster={reel.poster}
+              className="h-full w-full object-cover"
+            >
+              <source src={reel.src} type="video/mp4" />
+            </video>
+          </motion.div>
+        </AnimatePresence>
+        {/* Subtle gradient at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg/60 to-transparent z-10" />
+        {/* Reel indicator dots */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
+          {HERO_REELS.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setIdx(i)}
+              className={`w-2 h-2 rounded-full transition-all ${i === idx ? 'bg-accent w-6' : 'bg-white/30'}`}
+            />
+          ))}
+        </div>
+      </div>
+    </motion.div>
+  )
+}
 
 /* ---------- Hero ---------- */
 export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
@@ -173,48 +255,13 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
           </motion.div>
         </div>
 
-        {/* Right — Video (bigger, taller) */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.88, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="hidden lg:flex justify-end items-center"
-        >
-          <div className="relative h-[85vh] max-h-[800px] aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
-            style={{ boxShadow: '0 0 80px rgba(0, 210, 106, 0.15), 0 25px 50px rgba(0, 0, 0, 0.5)' }}
-          >
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster="/images/deegan/deegan-hero-poster.jpg"
-              className="h-full w-full object-cover"
-            >
-              <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
-            </video>
-            {/* Subtle green gradient at bottom of video */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-bg/60 to-transparent" />
-          </div>
-        </motion.div>
+        {/* Right — Rotating reels */}
+        <HeroReelCarousel className="hidden lg:flex justify-end items-center" tall />
       </div>
 
-      {/* Mobile — video below text */}
+      {/* Mobile — rotating reels below text */}
       <div className="lg:hidden px-4 pb-12">
-        <div className="relative mx-auto max-w-xs aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10"
-          style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.12), 0 20px 40px rgba(0, 0, 0, 0.4)' }}
-        >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/images/deegan/deegan-hero-poster.jpg"
-            className="h-full w-full object-cover"
-          >
-            <source src="/images/deegan/deegan-hero.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <HeroReelCarousel className="flex justify-center" tall={false} />
       </div>
     </section>
   )
@@ -237,9 +284,7 @@ export function DangerBoySection() {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr,280px] gap-12 lg:gap-16 items-center">
-          {/* Left — all text content */}
-          <div>
+        <div>
             <FadeInView>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
                 Powered by
@@ -294,25 +339,6 @@ export function DangerBoySection() {
                 </Link>
               </div>
             </SlideInLeft>
-          </div>
-
-          {/* Right — Reel video */}
-          <FadeInView delay={0.2}>
-            <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden ring-1 ring-white/10 mx-auto lg:mx-0"
-              style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
-            >
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/images/deegan/deegan-section-poster.jpg"
-                className="h-full w-full object-cover"
-              >
-                <source src="/images/deegan/deegan-section.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </FadeInView>
         </div>
       </div>
     </section>
