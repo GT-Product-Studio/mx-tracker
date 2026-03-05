@@ -376,27 +376,61 @@ export function ActiveChallenges({ challenges }: { challenges: ChallengeData[] }
   )
 }
 
-/* ---------- Full-bleed action shot divider ---------- */
+/* ---------- Action divider ---------- */
 export function ActionBanner() {
   return (
-    <section className="relative h-[50vh] min-h-[300px] max-h-[500px] overflow-hidden">
-      <Image
-        src="/images/deegan/deegan-sx-16.jpg"
-        alt="Haiden Deegan panoramic Supercross action"
-        fill
-        quality={100}
-        className="object-cover object-center"
+    <section className="relative overflow-hidden py-24 sm:py-32">
+      {/* Animated diagonal lines background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {[...Array(5)].map((_, i) => (
+          <motion.div
+            key={`ab-line-${i}`}
+            className="absolute h-[2px] bg-gradient-to-r from-transparent via-accent/15 to-transparent"
+            style={{
+              top: `${15 + i * 18}%`,
+              left: '-50%',
+              width: '60%',
+              transform: 'rotate(-12deg)',
+            }}
+            animate={{ x: ['0%', '300%'] }}
+            transition={{
+              duration: 5 + i,
+              repeat: Infinity,
+              ease: 'linear',
+              delay: i * 0.8,
+            }}
+          />
+        ))}
+      </div>
+      {/* Subtle green glow */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(0, 210, 106, 0.06) 0%, transparent 70%)', filter: 'blur(60px)' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-bg/80 via-bg/40 to-transparent" />
-      <FadeInView className="relative z-10 flex h-full items-center px-4">
-        <div className="mx-auto w-full max-w-7xl">
-          <p className="font-heading text-5xl font-bold sm:text-6xl lg:text-7xl text-white leading-[0.9]">
+
+      <div className="relative z-10 mx-auto max-w-7xl px-4 flex flex-col sm:flex-row items-center sm:items-end gap-8 sm:gap-16">
+        <FadeInView>
+          <p className="font-heading text-6xl font-bold sm:text-7xl lg:text-8xl text-white leading-[0.85] tracking-tight">
             RIDE.<br />
             <span className="text-accent">COMPETE.</span><br />
             REPEAT.
           </p>
-        </div>
-      </FadeInView>
+        </FadeInView>
+        <SlideInLeft>
+          <div className="flex gap-6 pb-2">
+            {[
+              { num: '648', label: 'Tracks across the US' },
+              { num: '30', label: 'Pro circuit venues' },
+              { num: '∞', label: 'Laps to log' },
+            ].map((s) => (
+              <div key={s.label} className="text-center">
+                <p className="font-heading text-3xl sm:text-4xl font-bold text-accent">{s.num}</p>
+                <p className="text-xs text-white/40 mt-1 max-w-[80px]">{s.label}</p>
+              </div>
+            ))}
+          </div>
+        </SlideInLeft>
+      </div>
     </section>
   )
 }
