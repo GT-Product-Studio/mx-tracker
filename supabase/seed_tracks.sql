@@ -1,4 +1,4 @@
--- MX Tracker: Track seed data (648 tracks)
+-- Braap: Track seed data (648 tracks)
 
 INSERT INTO tracks (name, location_city, location_state, type, difficulty, approved, start_lat, start_lng) VALUES ('Glen Helen Raceway', 'San Bernardino', 'California', 'motocross', 'pro', true, 34.1553, -117.3798);
 INSERT INTO tracks (name, location_city, location_state, type, difficulty, approved, start_lat, start_lng) VALUES ('Fox Raceway', 'Pala', 'California', 'motocross', 'advanced', true, 33.3694, -117.0894);

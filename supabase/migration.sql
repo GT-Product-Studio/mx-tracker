@@ -1,4 +1,4 @@
--- MX Tracker Database Schema
+-- Braap Database Schema
 
 -- Enable UUID extension
 create extension if not exists "uuid-ossp";

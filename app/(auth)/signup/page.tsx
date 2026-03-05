@@ -42,7 +42,7 @@ export default function SignupPage() {
       <FadeIn>
         <div className="w-full max-w-md rounded-xl border border-border bg-card p-8">
           <h1 className="font-heading text-3xl font-bold text-text mb-2">Create Account</h1>
-          <p className="text-text-muted text-sm mb-8">Join the MX Tracker community</p>
+          <p className="text-text-muted text-sm mb-8">Join the Braap community</p>
 
           {error && (
             <div className="mb-4 rounded-lg bg-danger/10 border border-danger/20 p-3 text-sm text-danger">

@@ -20,8 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'MX Tracker | Motocross Performance Platform',
-  description: 'Track your lap times, compete on leaderboards, and connect with riders across the country.',
+  title: 'Braap | Motocross Performance Platform',
+  description: 'Track your rides, chase the leaderboard, and compete in Danger Boy Challenges with Haiden Deegan.',
 }
 
 export default function RootLayout({

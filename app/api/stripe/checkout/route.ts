@@ -47,7 +47,7 @@ export async function GET() {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'MX Tracker Premium',
+              name: 'Braap Premium',
               description: 'Unlimited features, advanced analytics, and priority support.',
             },
             unit_amount: 999,

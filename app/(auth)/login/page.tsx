@@ -36,7 +36,7 @@ function LoginForm() {
       <FadeIn>
         <div className="w-full max-w-md rounded-xl border border-border bg-card p-8">
           <h1 className="font-heading text-3xl font-bold text-text mb-2">Sign In</h1>
-          <p className="text-text-muted text-sm mb-8">Welcome back to MX Tracker</p>
+          <p className="text-text-muted text-sm mb-8">Welcome back to Braap</p>
 
           {error && (
             <div className="mb-4 rounded-lg bg-danger/10 border border-danger/20 p-3 text-sm text-danger">

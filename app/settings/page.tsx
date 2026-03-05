@@ -61,7 +61,7 @@ export default function SettingsPage() {
                   {profile?.is_premium ? 'Premium Plan' : 'Free Plan'}
                 </p>
                 <p className="text-xs text-text-muted mt-1">
-                  {profile?.is_premium ? '$9.99/month — Unlimited features' : 'Basic access to MX Tracker'}
+                  {profile?.is_premium ? '$9.99/month — Unlimited features' : 'Basic access to Braap'}
                 </p>
               </div>
               {!profile?.is_premium && (
