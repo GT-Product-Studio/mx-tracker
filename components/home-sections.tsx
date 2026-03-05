@@ -285,7 +285,9 @@ export function DangerBoySection() {
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
-        <div>
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr,380px] gap-12 lg:gap-16 items-center">
+          {/* Left — text content */}
+          <div>
             <FadeInView>
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-3">
                 Powered by
@@ -340,6 +342,23 @@ export function DangerBoySection() {
                 </Link>
               </div>
             </SlideInLeft>
+          </div>
+
+          {/* Right — Haiden portrait */}
+          <FadeInView delay={0.2}>
+            <div className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 hidden lg:block"
+              style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
+            >
+              <Image
+                src="/images/deegan/deegan-portrait.jpg"
+                alt="Haiden Deegan"
+                width={1179}
+                height={1572}
+                quality={100}
+                className="w-full h-auto"
+              />
+            </div>
+          </FadeInView>
         </div>
       </div>
     </section>
