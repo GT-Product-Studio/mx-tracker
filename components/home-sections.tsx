@@ -149,7 +149,24 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
         }}
       />
 
-      <div className="relative z-10 mx-auto grid h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl grid-cols-1 lg:grid-cols-2 items-center gap-0 px-6 pt-20 lg:px-8">
+      <div className="relative z-10 mx-auto flex h-screen max-h-[900px] min-h-[650px] w-full max-w-7xl flex-col lg:grid lg:grid-cols-2 lg:items-center gap-0 px-6 pt-20 lg:px-8">
+        {/* Mobile header — Haiden Deegan name */}
+        <div className="lg:hidden mb-4">
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4 }}
+            className="text-xs font-bold uppercase tracking-[0.3em] text-accent"
+          >
+            Haiden Deegan
+          </motion.p>
+        </div>
+
+        {/* Mobile — rotating reels above text */}
+        <div className="lg:hidden flex justify-center mb-8">
+          <HeroReelCarousel className="flex justify-center" tall={false} />
+        </div>
+
         {/* Left — Text + Logo */}
         <div className="flex flex-col justify-center">
           {/* Logo with scale-in */}
@@ -245,10 +262,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
         <HeroReelCarousel className="hidden lg:flex justify-end items-center" tall />
       </div>
 
-      {/* Mobile — rotating reels below text */}
-      <div className="lg:hidden px-4 pb-12">
-        <HeroReelCarousel className="flex justify-center" tall={false} />
-      </div>
+      {/* Mobile reels moved above text — see top of hero */}
     </section>
   )
 }
