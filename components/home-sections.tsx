@@ -345,17 +345,16 @@ export function DangerBoySection() {
           </div>
 
           {/* Right — Haiden portrait */}
-          <FadeInView delay={0.2}>
-            <div className="relative rounded-2xl overflow-hidden ring-1 ring-white/10 hidden lg:block"
+          <FadeInView delay={0.2} className="hidden lg:block">
+            <div className="relative h-[70vh] max-h-[700px] w-full rounded-2xl overflow-hidden ring-1 ring-white/10"
               style={{ boxShadow: '0 0 60px rgba(0, 210, 106, 0.1), 0 20px 40px rgba(0,0,0,0.4)' }}
             >
               <Image
                 src="/images/deegan/deegan-portrait.jpg"
                 alt="Haiden Deegan"
-                width={1179}
-                height={1572}
+                fill
                 quality={100}
-                className="w-full h-auto"
+                className="object-cover object-top"
               />
             </div>
           </FadeInView>
