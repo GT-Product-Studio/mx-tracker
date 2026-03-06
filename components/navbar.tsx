@@ -9,14 +9,7 @@ import type { User } from '@supabase/supabase-js'
 const navLinks = [
   { href: '/tracks', label: 'Venues' },
   { href: '/leaderboard', label: 'Leaderboard' },
-  { href: '/challenges', label: 'Challenges' },
-]
-
-const authLinks = [
-  { href: '/laps', label: 'My Laps' },
-  { href: '/laps/new', label: 'Log Lap' },
-  { href: '/upload', label: 'Upload' },
-  { href: '/record', label: 'Record' },
+  { href: '/battles', label: 'Battles' },
 ]
 
 export function Navbar() {
@@ -52,18 +45,9 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium transition-colors ${
-                pathname === link.href ? 'text-accent' : 'text-text-muted hover:text-text'
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          {user && authLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm font-medium transition-colors ${
-                pathname === link.href ? 'text-accent' : 'text-text-muted hover:text-text'
+                pathname === link.href || pathname.startsWith(link.href + '/')
+                  ? 'text-accent'
+                  : 'text-text-muted hover:text-text'
               }`}
             >
               {link.label}
@@ -73,7 +57,9 @@ export function Navbar() {
             <div className="flex items-center gap-4">
               <Link
                 href="/profile"
-                className="text-sm font-medium text-text-muted hover:text-text transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  pathname === '/profile' ? 'text-accent' : 'text-text-muted hover:text-text'
+                }`}
               >
                 Profile
               </Link>
@@ -111,16 +97,6 @@ export function Navbar() {
         <div className="border-t border-border bg-bg px-4 pb-4 md:hidden">
           <div className="flex flex-col gap-3 pt-3">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setMenuOpen(false)}
-                className={`text-sm font-medium ${pathname === link.href ? 'text-accent' : 'text-text-muted'}`}
-              >
-                {link.label}
-              </Link>
-            ))}
-            {user && authLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

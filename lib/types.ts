@@ -117,3 +117,82 @@ export interface Follow {
   following_id: string
   created_at: string
 }
+
+export interface Battle {
+  id: string
+  challenger_id: string
+  defender_id: string | null
+  venue_id: string
+  track_id: string | null
+  bike_class: '85' | '125' | '250f' | '450f' | 'vet' | 'open'
+  status: 'pending' | 'active' | 'completed' | 'expired' | 'declined'
+  battle_type: 'best_of_3' | 'full_moto' | 'holeshot' | 'consistency'
+  winner_id: string | null
+  expires_at: string
+  created_at: string
+  updated_at: string
+  // Joined
+  challenger?: Profile
+  defender?: Profile
+  winner?: Profile
+  venues?: Venue
+  tracks?: Track
+  battle_entries?: BattleEntry[]
+}
+
+export interface BattleEntry {
+  id: string
+  battle_id: string
+  user_id: string
+  lap_time_ms: number
+  lap_count: number
+  avg_time_ms: number | null
+  consistency_score: number | null
+  photo_proof_url: string | null
+  verified: boolean
+  notes: string | null
+  created_at: string
+  // Joined
+  profiles?: Profile
+}
+
+export interface Checkin {
+  id: string
+  user_id: string
+  venue_id: string
+  conditions: 'dry' | 'muddy' | 'wet' | 'sandy' | 'groomed' | 'rough' | null
+  notes: string | null
+  photo_url: string | null
+  created_at: string
+  // Joined
+  profiles?: Profile
+  venues?: Venue
+}
+
+export interface ProTime {
+  id: string
+  rider_name: string
+  venue_id: string | null
+  track_id: string | null
+  bike_class: string
+  lap_time_ms: number
+  event_name: string | null
+  event_date: string | null
+  source: string
+  created_at: string
+  // Joined
+  venues?: Venue
+}
+
+export interface RiderStats {
+  user_id: string
+  battles_won: number
+  battles_lost: number
+  battles_drawn: number
+  win_streak: number
+  best_win_streak: number
+  braap_score: number
+  rank_tier: 'bronze' | 'silver' | 'gold' | 'diamond' | 'pro'
+  venues_visited: number
+  updated_at: string
+}

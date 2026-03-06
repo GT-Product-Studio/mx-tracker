@@ -185,14 +185,14 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
             className="text-[clamp(1.5rem,3vw,2.25rem)] font-bold leading-tight text-white"
           >
-            Track your rides.<br />
+            The Scoreboard<br />
             <motion.span
               className="text-accent inline-block"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.4, ease: 'easeOut' }}
             >
-              Chase the leaderboard.
+              for Motocross.
             </motion.span>
           </motion.p>
 
@@ -202,7 +202,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             transition={{ duration: 0.5, delay: 0.3, ease: 'easeOut' }}
             className="mt-4 max-w-md text-base text-white/50 sm:text-lg"
           >
-            Built with 2x AMA Champion Haiden Deegan. Log laps, compete on leaderboards, and take on Danger Boy Challenges.
+            Built with 2x AMA Champion Haiden Deegan. Challenge riders, climb leaderboards, and chase pro times at every track.
           </motion.p>
 
           <motion.div
@@ -213,24 +213,24 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
           >
             {isLoggedIn ? (
               <Link
-                href="/laps/new"
+                href="/battles"
                 className="group relative rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
               >
-                Log a Lap
+                Start a Battle
               </Link>
             ) : (
               <Link
                 href="/signup"
                 className="group relative rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
               >
-                Get Started — It&apos;s Free
+                Join the Competition
               </Link>
             )}
             <Link
-              href="/challenges"
+              href="/leaderboard"
               className="rounded-lg border border-white/20 px-8 py-3.5 text-sm font-medium text-white transition-all hover:border-accent/50 hover:text-accent hover:shadow-lg hover:shadow-accent/10 hover:-translate-y-0.5"
             >
-              Danger Boy Challenges
+              Chase the Pros
             </Link>
           </motion.div>
 
@@ -261,8 +261,272 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
         {/* Right — Rotating reels */}
         <HeroReelCarousel className="hidden lg:flex justify-end items-center" tall />
       </div>
+    </section>
+  )
+}
 
-      {/* Mobile reels moved above text — see top of hero */}
+/* ---------- How It Works ---------- */
+export function HowItWorks() {
+  const steps = [
+    {
+      num: '01',
+      title: 'Find a Track',
+      desc: 'Browse 648+ tracks across the US. Check conditions, see who\'s riding.',
+      icon: (
+        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+        </svg>
+      ),
+    },
+    {
+      num: '02',
+      title: 'Log Your Time',
+      desc: 'Record your lap time, add photo proof, track your progress over time.',
+      icon: (
+        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+      ),
+    },
+    {
+      num: '03',
+      title: 'Challenge Anyone',
+      desc: 'Pick a rider, pick a track, battle 1v1. Winner takes bragging rights.',
+      icon: (
+        <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+        </svg>
+      ),
+    },
+  ]
+
+  return (
+    <section className="py-20 sm:py-28">
+      <div className="mx-auto max-w-7xl px-4">
+        <FadeInView>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">How it works</p>
+          <h2 className="font-heading text-3xl font-bold sm:text-4xl">Three steps to the leaderboard</h2>
+        </FadeInView>
+
+        <div className="mt-12 grid gap-6 sm:grid-cols-3">
+          {steps.map((step, i) => (
+            <ScaleIn key={step.num} delay={i * 0.1}>
+              <div className="rounded-xl border border-border bg-card p-8 hover:border-accent/20 transition-colors">
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    {step.icon}
+                  </div>
+                  <span className="font-mono text-sm text-text-muted">{step.num}</span>
+                </div>
+                <h3 className="font-heading text-xl font-bold mb-2">{step.title}</h3>
+                <p className="text-sm text-text-muted leading-relaxed">{step.desc}</p>
+              </div>
+            </ScaleIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ---------- Live Battles ---------- */
+type BattlePreview = {
+  id: string
+  challenger?: { display_name: string } | null
+  defender?: { display_name: string } | null
+  venues?: { name: string } | null
+  bike_class: string
+  battle_type: string
+  status: string
+}
+
+export function LiveBattles({ battles }: { battles: BattlePreview[] }) {
+  return (
+    <section className="py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <FadeInView>
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">
+                Live Battles
+              </p>
+              <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+                Riders competing right now
+              </h2>
+            </div>
+            <Link href="/battles" className="text-sm text-text-muted hover:text-accent transition-colors hidden sm:block">
+              All battles →
+            </Link>
+          </div>
+        </FadeInView>
+
+        {battles.length > 0 ? (
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {battles.map((battle, i) => (
+              <ScaleIn key={battle.id} delay={i * 0.08}>
+                <Link
+                  href={`/battles/${battle.id}`}
+                  className="group block rounded-xl border border-accent/20 bg-card p-6 hover:bg-card-hover transition-colors"
+                >
+                  <div className="flex items-center gap-2 mb-4">
+                    <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-accent">
+                      {battle.status === 'active' ? 'Live' : 'Open Challenge'}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="font-heading text-lg font-bold">{battle.challenger?.display_name || 'Unknown'}</span>
+                    <span className="text-xs font-bold text-accent">VS</span>
+                    <span className="font-heading text-lg font-bold">
+                      {battle.defender?.display_name || '???'}
+                    </span>
+                  </div>
+                  <div className="border-t border-border/50 pt-3 flex items-center justify-between">
+                    <span className="text-xs text-text-muted">{battle.venues?.name}</span>
+                    <span className="text-xs font-medium text-text-muted uppercase">{battle.bike_class}</span>
+                  </div>
+                </Link>
+              </ScaleIn>
+            ))}
+          </div>
+        ) : (
+          <FadeInView>
+            <div className="rounded-xl border border-border bg-card p-12 text-center">
+              <p className="font-heading text-2xl font-bold mb-2">No active battles yet</p>
+              <p className="text-text-muted mb-6">Be the first to throw down a challenge.</p>
+              <Link
+                href="/battles"
+                className="inline-block rounded-lg bg-accent px-8 py-3 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
+              >
+                Start a Battle
+              </Link>
+            </div>
+          </FadeInView>
+        )}
+
+        <Link href="/battles" className="mt-6 block text-sm text-text-muted hover:text-accent transition-colors sm:hidden">
+          All battles →
+        </Link>
+      </div>
+    </section>
+  )
+}
+
+/* ---------- Chase the Pros ---------- */
+type ProTimePreview = {
+  id: string
+  rider_name: string
+  lap_time_ms: number
+  bike_class: string
+  event_name: string | null
+  venues?: { name: string } | null
+}
+
+export function ChaseThePros({ proTimes }: { proTimes: ProTimePreview[] }) {
+  if (!proTimes || proTimes.length === 0) return null
+
+  return (
+    <section className="py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <FadeInView>
+          <div className="flex items-end justify-between mb-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold mb-2">
+                Chase the Pros
+              </p>
+              <h2 className="font-heading text-3xl font-bold sm:text-4xl">
+                How close can you get?
+              </h2>
+            </div>
+            <Link href="/leaderboard" className="text-sm text-text-muted hover:text-accent transition-colors hidden sm:block">
+              Full leaderboard →
+            </Link>
+          </div>
+        </FadeInView>
+
+        <div className="rounded-xl border border-gold/20 bg-card overflow-hidden">
+          {proTimes.slice(0, 5).map((pt, i) => (
+            <div
+              key={pt.id}
+              className={`flex items-center justify-between p-4 ${i < proTimes.length - 1 && i < 4 ? 'border-b border-border/50' : ''}`}
+            >
+              <div className="flex items-center gap-4">
+                <span className="w-8 text-center text-lg" style={{ color: getRankColor(i + 1) }}>
+                  {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`}
+                </span>
+                <div>
+                  <p className="text-sm font-bold text-gold">{pt.rider_name}</p>
+                  <p className="text-xs text-text-muted">{pt.venues?.name} · {pt.event_name}</p>
+                </div>
+              </div>
+              <div className="text-right">
+                <span className="font-mono text-lg font-bold text-gold">{formatLapTime(pt.lap_time_ms)}</span>
+                <p className="text-[10px] text-text-muted uppercase">{pt.bike_class}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <FadeInView delay={0.2}>
+          <div className="mt-6 rounded-xl border border-accent/20 bg-card p-6 text-center">
+            <p className="text-text-muted mb-1">You are</p>
+            <p className="font-mono text-3xl font-bold text-accent">??:??.???</p>
+            <p className="text-text-muted mt-1">off Haiden Deegan&apos;s pace</p>
+            <Link href="/signup" className="mt-4 inline-block text-sm font-bold text-accent hover:underline">
+              Log a lap to find out →
+            </Link>
+          </div>
+        </FadeInView>
+      </div>
+    </section>
+  )
+}
+
+/* ---------- Track Finder Preview ---------- */
+type VenuePreview = {
+  id: string
+  name: string
+  location_city: string | null
+  location_state: string
+  type: string
+}
+
+export function TrackFinderPreview({ venues }: { venues: VenuePreview[] }) {
+  if (!venues || venues.length === 0) return null
+
+  return (
+    <section className="py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <FadeInView>
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">Track Finder</p>
+              <h2 className="font-heading text-2xl font-bold">Find your local track</h2>
+            </div>
+            <Link href="/tracks" className="text-sm text-text-muted hover:text-accent transition-colors">
+              All venues →
+            </Link>
+          </div>
+        </FadeInView>
+
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {venues.slice(0, 6).map((venue, i) => (
+            <ScaleIn key={venue.id} delay={i * 0.05}>
+              <Link
+                href={`/venues/${venue.id}`}
+                className="rounded-xl border border-border bg-card p-5 hover:bg-card-hover hover:border-accent/20 transition-colors block"
+              >
+                <h3 className="font-heading font-bold text-sm">{venue.name}</h3>
+                <p className="text-xs text-text-muted mt-1">{venue.location_city}, {venue.location_state}</p>
+                <span className="mt-2 inline-block rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-text-muted capitalize">
+                  {venue.type}
+                </span>
+              </Link>
+            </ScaleIn>
+          ))}
+        </div>
+      </div>
     </section>
   )
 }
@@ -335,15 +599,15 @@ export function DangerBoySection() {
             {/* Description + CTAs */}
             <SlideInLeft>
               <p className="mt-12 max-w-lg text-lg text-white/50 leading-relaxed">
-                Haiden isn&apos;t just an ambassador — he sets every challenge you compete against.
-                Beat his target times, climb the leaderboard, earn bragging rights. The fastest 250 rider on the planet is waiting.
+                Haiden isn&apos;t just an ambassador — he sets the times you compete against.
+                Beat his pace, climb the leaderboard, earn bragging rights. The fastest 250 rider on the planet is waiting.
               </p>
               <div className="mt-8 flex items-center gap-4">
                 <Link
                   href="/challenges"
                   className="rounded-lg bg-accent px-8 py-3.5 text-sm font-bold text-black transition-all hover:bg-accent-hover hover:shadow-lg hover:shadow-accent/25 hover:-translate-y-0.5"
                 >
-                  Take on a Challenge
+                  Chase Deegan
                 </Link>
                 <Link
                   href="/leaderboard"
@@ -381,257 +645,6 @@ export function DangerBoySection() {
   )
 }
 
-/* ---------- Active Challenges ---------- */
-type ChallengeData = {
-  id: string
-  title: string
-  deegan_time_ms: number
-  tracks?: { name: string } | null
-}
-
-export function ActiveChallenges({ challenges }: { challenges: ChallengeData[] }) {
-  if (!challenges || challenges.length === 0) return null
-
-  return (
-    <section className="py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        <FadeInView>
-          <div className="flex items-end justify-between mb-10">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">
-                Danger Boy Challenges
-              </p>
-              <h2 className="font-heading text-3xl font-bold sm:text-4xl">
-                Can you beat Deegan&apos;s time?
-              </h2>
-            </div>
-            <Link href="/challenges" className="text-sm text-text-muted hover:text-accent transition-colors hidden sm:block">
-              All challenges →
-            </Link>
-          </div>
-        </FadeInView>
-
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {challenges.map((challenge, i) => (
-            <ScaleIn key={challenge.id} delay={i * 0.08}>
-              <Link
-                href={`/challenges/${challenge.id}`}
-                className="group block rounded-xl border border-accent/20 bg-card p-6 hover:bg-card-hover transition-colors"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-accent">Active</span>
-                </div>
-                <h3 className="font-heading text-xl font-bold group-hover:text-accent transition-colors">
-                  {challenge.title}
-                </h3>
-                <p className="text-sm text-text-muted mt-1">{challenge.tracks?.name}</p>
-                <div className="mt-6 flex items-center justify-between border-t border-border/50 pt-4">
-                  <span className="text-xs text-text-muted uppercase">Danger Boy Time</span>
-                  <span className="font-mono text-lg font-bold text-gold">{formatLapTime(challenge.deegan_time_ms)}</span>
-                </div>
-              </Link>
-            </ScaleIn>
-          ))}
-        </div>
-
-        <Link href="/challenges" className="mt-6 block text-sm text-text-muted hover:text-accent transition-colors sm:hidden">
-          All challenges →
-        </Link>
-      </div>
-    </section>
-  )
-}
-
-/* ---------- Action divider ---------- */
-export function ActionBanner() {
-  return (
-    <section className="relative overflow-hidden py-24 sm:py-32">
-      {/* Animated diagonal lines background */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[...Array(5)].map((_, i) => (
-          <motion.div
-            key={`ab-line-${i}`}
-            className="absolute h-[2px] bg-gradient-to-r from-transparent via-accent/15 to-transparent"
-            style={{
-              top: `${15 + i * 18}%`,
-              left: '-50%',
-              width: '60%',
-              transform: 'rotate(-12deg)',
-            }}
-            animate={{ x: ['0%', '300%'] }}
-            transition={{
-              duration: 5 + i,
-              repeat: Infinity,
-              ease: 'linear',
-              delay: i * 0.8,
-            }}
-          />
-        ))}
-      </div>
-      {/* Subtle green glow */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(0, 210, 106, 0.06) 0%, transparent 70%)', filter: 'blur(60px)' }}
-      />
-
-      <div className="relative z-10 mx-auto max-w-7xl px-4 flex flex-col sm:flex-row items-center sm:items-end gap-8 sm:gap-16">
-        <FadeInView>
-          <p className="font-heading text-6xl font-bold sm:text-7xl lg:text-8xl text-white leading-[0.85] tracking-tight">
-            RIDE.<br />
-            <span className="text-accent">COMPETE.</span><br />
-            REPEAT.
-          </p>
-        </FadeInView>
-        <SlideInLeft>
-          <div className="flex gap-6 pb-2">
-            {[
-              { num: '648', label: 'Tracks across the US' },
-              { num: '30', label: 'Pro circuit venues' },
-              { num: '∞', label: 'Laps to log' },
-            ].map((s) => (
-              <div key={s.label} className="text-center">
-                <p className="font-heading text-3xl sm:text-4xl font-bold text-accent">{s.num}</p>
-                <p className="text-xs text-white/40 mt-1 max-w-[80px]">{s.label}</p>
-              </div>
-            ))}
-          </div>
-        </SlideInLeft>
-      </div>
-    </section>
-  )
-}
-
-/* ---------- Recent Activity ---------- */
-type LapData = {
-  id: string
-  time_ms: number
-  profiles?: { display_name: string } | null
-  tracks?: { name: string } | null
-}
-
-export function RecentActivity({ laps }: { laps: LapData[] }) {
-  if (!laps || laps.length === 0) return null
-
-  return (
-    <section className="py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        <FadeInView>
-          <div className="flex items-end justify-between mb-8">
-            <h2 className="font-heading text-2xl font-bold">Recent Activity</h2>
-            <Link href="/leaderboard" className="text-sm text-text-muted hover:text-accent transition-colors">
-              Full leaderboard →
-            </Link>
-          </div>
-        </FadeInView>
-
-        <FadeInView delay={0.1}>
-          <div className="rounded-xl border border-border bg-card overflow-hidden">
-            {laps.map((lap, i) => (
-              <div
-                key={lap.id}
-                className={`flex items-center justify-between p-4 ${i < laps.length - 1 ? 'border-b border-border/50' : ''}`}
-              >
-                <div className="flex items-center gap-4">
-                  <span className="w-6 text-center text-sm font-bold" style={{ color: getRankColor(i + 1) }}>
-                    {i + 1}
-                  </span>
-                  <div>
-                    <Link
-                      href={`/profile/${encodeURIComponent(lap.profiles?.display_name || '')}`}
-                      className="text-sm font-medium hover:text-accent transition-colors"
-                    >
-                      {lap.profiles?.display_name}
-                    </Link>
-                    <p className="text-xs text-text-muted">{lap.tracks?.name}</p>
-                  </div>
-                </div>
-                <span className="font-mono text-sm font-bold text-accent">{formatLapTime(lap.time_ms)}</span>
-              </div>
-            ))}
-          </div>
-        </FadeInView>
-      </div>
-    </section>
-  )
-}
-
-/* ---------- Featured Tracks with Deegan images ---------- */
-type TrackData = {
-  id: string
-  name: string
-  location_city: string
-  location_state: string
-  type: string
-  difficulty?: string | null
-}
-
-const trackImages = [
-  '/images/deegan/deegan-sx-3.jpg',
-  '/images/deegan/deegan-sx-7.jpg',
-  '/images/deegan/deegan-sx-11.jpg',
-  '/images/deegan/deegan-sx-22.jpg',
-  '/images/deegan/deegan-sx-30.jpg',
-  '/images/deegan/deegan-sx-35.jpg',
-]
-
-export function FeaturedTracks({ tracks }: { tracks: TrackData[] }) {
-  if (!tracks || tracks.length === 0) return null
-
-  return (
-    <section className="py-20">
-      <div className="mx-auto max-w-7xl px-4">
-        <FadeInView>
-          <div className="flex items-end justify-between mb-8">
-            <h2 className="font-heading text-2xl font-bold">Featured Tracks</h2>
-            <Link href="/tracks" className="text-sm text-text-muted hover:text-accent transition-colors">
-              All tracks →
-            </Link>
-          </div>
-        </FadeInView>
-
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {tracks.map((track, i) => (
-            <ScaleIn key={track.id} delay={i * 0.06}>
-              <Link
-                href={`/tracks/${track.id}`}
-                className="group block rounded-xl border border-border bg-card overflow-hidden hover:border-accent/20 transition-colors"
-              >
-                <div className="relative h-36 overflow-hidden">
-                  <Image
-                    src={trackImages[i % trackImages.length]}
-                    alt={track.name}
-                    fill
-                    quality={100}
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-heading text-lg font-bold">{track.name}</h3>
-                  <p className="text-sm text-text-muted mt-1">
-                    {track.location_city}, {track.location_state}
-                  </p>
-                  <div className="mt-3 flex gap-2">
-                    <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-text-muted capitalize">
-                      {track.type}
-                    </span>
-                    {track.difficulty && (
-                      <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-text-muted capitalize">
-                        {track.difficulty}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </Link>
-            </ScaleIn>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
 /* ---------- Bottom CTA ---------- */
 export function BottomCTA() {
   return (
@@ -647,9 +660,9 @@ export function BottomCTA() {
       </div>
       <FadeInView>
         <div className="relative z-10 mx-auto max-w-7xl px-4 text-center">
-          <h2 className="font-heading text-4xl font-bold sm:text-5xl">Ready to ride?</h2>
+          <h2 className="font-heading text-4xl font-bold sm:text-5xl">Join the competition</h2>
           <p className="mx-auto mt-4 max-w-md text-text-muted">
-            Join Braap to log your laps, take on Danger Boy Challenges, and climb the leaderboard.
+            Create your free account, log your times, challenge riders, and see where you stand against the pros.
           </p>
           <Link
             href="/signup"

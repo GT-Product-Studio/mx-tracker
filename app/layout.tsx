@@ -20,8 +20,8 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Braap | Motocross Performance Platform',
-  description: 'Track your rides, chase the leaderboard, and compete in Danger Boy Challenges with Haiden Deegan.',
+  title: 'Braap | The Scoreboard for Motocross',
+  description: 'Challenge riders, climb leaderboards, and chase pro times at every track. Built with Haiden Deegan.',
 }
 
 export default function RootLayout({
