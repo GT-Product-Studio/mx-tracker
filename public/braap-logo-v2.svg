@@ -20,5 +20,5 @@
   </g>
   <circle cx="222" cy="34" r="6" fill="#29F000"/>
   <circle cx="233" cy="24" r="4.5" fill="#29F000"/>
-  <circle cx="241" cy="16" r="2.5" fill="white"/>
+  <circle cx="241" cy="16" r="2.5" fill="#29F000" opacity="0.5"/>
 </svg>
