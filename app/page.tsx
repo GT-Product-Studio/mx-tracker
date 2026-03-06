@@ -5,6 +5,7 @@ import {
   LiveBattles,
   ChaseThePros,
   TrackFinderPreview,
+  RankingSystem,
   DangerBoySection,
   BottomCTA,
 } from '@/components/home-sections'
@@ -41,10 +42,11 @@ export default async function HomePage() {
   return (
     <div>
       <Hero isLoggedIn={!!user} />
-      <HowItWorks />
-      <LiveBattles battles={activeBattles || []} />
       <ChaseThePros proTimes={proTimes || []} />
       <TrackFinderPreview venues={venues || []} />
+      <RankingSystem />
+      <HowItWorks />
+      <LiveBattles battles={activeBattles || []} />
       <DangerBoySection />
       {!user && <BottomCTA />}
     </div>

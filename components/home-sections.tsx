@@ -487,6 +487,16 @@ type VenuePreview = {
   type: string
 }
 
+// Use real Deegan race photos as venue card backgrounds
+const VENUE_PHOTOS = [
+  '/images/deegan/deegan-sx-3.jpg',
+  '/images/deegan/deegan-sx-12.jpg',
+  '/images/deegan/deegan-sx-18.jpg',
+  '/images/deegan/deegan-sx-25.jpg',
+  '/images/deegan/deegan-sx-33.jpg',
+  '/images/deegan/deegan-sx-40.jpg',
+]
+
 export function TrackFinderPreview({ venues }: { venues: VenuePreview[] }) {
   if (!venues || venues.length === 0) return null
 
@@ -496,30 +506,157 @@ export function TrackFinderPreview({ venues }: { venues: VenuePreview[] }) {
         <FadeInView>
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">Track Finder</p>
-              <h2 className="font-heading text-2xl font-bold">Find your local track</h2>
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">Find Your Track</p>
+              <h2 className="font-heading text-3xl font-bold sm:text-4xl">438+ venues nationwide</h2>
             </div>
-            <Link href="/tracks" className="text-sm text-text-muted hover:text-accent transition-colors">
-              All venues →
+            <Link href="/tracks" className="text-sm text-text-muted hover:text-accent transition-colors hidden sm:block">
+              Browse all →
             </Link>
           </div>
         </FadeInView>
 
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {venues.slice(0, 6).map((venue, i) => (
-            <ScaleIn key={venue.id} delay={i * 0.05}>
+            <ScaleIn key={venue.id} delay={i * 0.06}>
               <Link
                 href={`/venues/${venue.id}`}
-                className="rounded-xl border border-border bg-card p-5 hover:bg-card-hover hover:border-accent/20 transition-colors block"
+                className="group relative block h-48 rounded-xl overflow-hidden"
               >
-                <h3 className="font-heading font-bold text-sm">{venue.name}</h3>
-                <p className="text-xs text-text-muted mt-1">{venue.location_city}, {venue.location_state}</p>
-                <span className="mt-2 inline-block rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-text-muted capitalize">
-                  {venue.type}
-                </span>
+                <Image
+                  src={VENUE_PHOTOS[i % VENUE_PHOTOS.length]}
+                  alt={venue.name}
+                  fill
+                  quality={100}
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <span className="inline-block rounded-full bg-accent/20 border border-accent/30 px-2 py-0.5 text-[10px] font-bold text-accent uppercase mb-2">
+                    {venue.type}
+                  </span>
+                  <h3 className="font-heading font-bold text-lg leading-tight">{venue.name}</h3>
+                  <p className="text-xs text-white/60 mt-0.5">{venue.location_city}, {venue.location_state}</p>
+                </div>
               </Link>
             </ScaleIn>
           ))}
+        </div>
+
+        <Link href="/tracks" className="mt-6 block text-sm text-text-muted hover:text-accent transition-colors sm:hidden">
+          Browse all venues →
+        </Link>
+      </div>
+    </section>
+  )
+}
+
+/* ---------- Ranking / XP System ---------- */
+const RANKS = [
+  { tier: 'Bronze', emoji: '🟤', range: '0–5 wins', xp: '0–500 XP', color: '#CD7F32', desc: 'Just getting started' },
+  { tier: 'Silver', emoji: '⚪', range: '6–15 wins', xp: '500–1,500 XP', color: '#C0C0C0', desc: 'Proven competitor' },
+  { tier: 'Gold', emoji: '🟡', range: '16–30 wins', xp: '1,500–3,000 XP', color: '#FFD700', desc: 'Track regular' },
+  { tier: 'Diamond', emoji: '💎', range: '31–50 wins', xp: '3,000–5,000 XP', color: '#B9F2FF', desc: 'Elite rider' },
+  { tier: 'Pro', emoji: '🏆', range: '50+ wins', xp: '5,000+ XP', color: '#00D26A', desc: 'Legend status' },
+]
+
+const XP_ACTIONS = [
+  { action: 'Win a battle', xp: '+100 XP' },
+  { action: 'Log a lap time', xp: '+25 XP' },
+  { action: 'Check in at a venue', xp: '+15 XP' },
+  { action: 'Complete a challenge', xp: '+50 XP' },
+  { action: 'Visit a new track', xp: '+30 XP' },
+]
+
+export function RankingSystem() {
+  return (
+    <section className="py-20">
+      <div className="mx-auto max-w-7xl px-4">
+        <FadeInView>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent mb-2">Braap Score</p>
+          <h2 className="font-heading text-3xl font-bold sm:text-4xl">Earn XP. Rank up. Get recognized.</h2>
+          <p className="mt-3 text-text-muted max-w-lg">
+            Every ride, every battle, every check-in earns XP toward your Braap Score. Climb through five ranks from Bronze to Pro.
+          </p>
+        </FadeInView>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          {/* Rank tiers */}
+          <div className="rounded-xl border border-border bg-card overflow-hidden">
+            <div className="px-4 py-3 border-b border-border">
+              <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-text-muted">Rank Tiers</h3>
+            </div>
+            {RANKS.map((rank, i) => (
+              <motion.div
+                key={rank.tier}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className={`flex items-center justify-between px-4 py-4 ${i < RANKS.length - 1 ? 'border-b border-border/30' : ''}`}
+              >
+                <div className="flex items-center gap-3">
+                  <span className="text-2xl w-8 text-center">{rank.emoji}</span>
+                  <div>
+                    <p className="text-sm font-bold" style={{ color: rank.color }}>{rank.tier}</p>
+                    <p className="text-[10px] text-text-muted">{rank.desc}</p>
+                  </div>
+                </div>
+                <div className="text-right">
+                  <p className="text-xs font-mono font-bold text-text">{rank.xp}</p>
+                  <p className="text-[10px] text-text-muted">{rank.range}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* How to earn XP */}
+          <div>
+            <div className="rounded-xl border border-accent/20 bg-card overflow-hidden">
+              <div className="px-4 py-3 border-b border-accent/10">
+                <h3 className="font-heading font-bold text-sm uppercase tracking-wider text-accent">How to Earn XP</h3>
+              </div>
+              {XP_ACTIONS.map((item, i) => (
+                <motion.div
+                  key={item.action}
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.08 }}
+                  className={`flex items-center justify-between px-4 py-4 ${i < XP_ACTIONS.length - 1 ? 'border-b border-border/30' : ''}`}
+                >
+                  <span className="text-sm text-text">{item.action}</span>
+                  <span className="font-mono text-sm font-bold text-accent">{item.xp}</span>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Progress preview */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="mt-4 rounded-xl border border-border bg-card p-5"
+            >
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-sm font-bold">Your Braap Score</span>
+                <span className="text-sm text-text-muted">🟤 Bronze</span>
+              </div>
+              <div className="h-3 rounded-full bg-border overflow-hidden">
+                <div className="h-full rounded-full bg-gradient-to-r from-accent/50 to-accent w-[15%]" />
+              </div>
+              <div className="flex items-center justify-between mt-2">
+                <span className="text-[10px] text-text-muted">0 XP</span>
+                <span className="text-[10px] text-text-muted">500 XP to Silver ⚪</span>
+              </div>
+              <Link
+                href="/signup"
+                className="mt-4 block text-center rounded-lg bg-accent px-6 py-2.5 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
+              >
+                Start Earning XP
+              </Link>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>
