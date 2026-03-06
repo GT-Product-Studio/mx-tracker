@@ -42,12 +42,11 @@ export default async function HomePage() {
   return (
     <div>
       <Hero isLoggedIn={!!user} />
-      <DangerBoySection />
-      <ChaseThePros proTimes={proTimes || []} />
-      <TrackFinderPreview venues={venues || []} />
-      <RankingSystem />
       <HowItWorks />
-      <LiveBattles battles={activeBattles || []} />
+      <ChaseThePros proTimes={proTimes || []} />
+      <RankingSystem />
+      <DangerBoySection />
+      <TrackFinderPreview venues={venues || []} />
       {!user && <BottomCTA />}
     </div>
   )
