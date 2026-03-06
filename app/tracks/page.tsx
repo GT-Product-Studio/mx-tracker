@@ -1,12 +1,14 @@
 import { createClient } from '@/lib/supabase-server'
 import Image from 'next/image'
-import { TracksFilter } from '@/components/tracks-filter'
+import { VenuesFilter } from '@/components/venues-filter'
 
 export default async function TracksPage() {
   const supabase = await createClient()
-  const { data: tracks } = await supabase
-    .from('tracks')
-    .select('*')
+  
+  // Fetch venues with track count
+  const { data: venues } = await supabase
+    .from('venues')
+    .select('*, tracks(id, layout_name, difficulty)')
     .eq('approved', true)
     .order('name')
 
@@ -25,14 +27,14 @@ export default async function TracksPage() {
         <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
         <div className="relative z-10 flex h-full items-end pb-8 px-4">
           <div className="mx-auto w-full max-w-7xl">
-            <h1 className="font-heading text-4xl font-bold">Tracks</h1>
-            <p className="text-text-muted text-sm mt-1">{tracks?.length || 0} tracks across the US</p>
+            <h1 className="font-heading text-4xl font-bold">Venues</h1>
+            <p className="text-text-muted text-sm mt-1">{venues?.length || 0} facilities across the US</p>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-7xl px-4 py-8">
-        <TracksFilter tracks={tracks || []} />
+        <VenuesFilter venues={venues || []} />
       </div>
     </div>
   )

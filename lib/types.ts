@@ -13,6 +13,25 @@ export interface Profile {
   updated_at: string
 }
 
+export interface Venue {
+  id: string
+  name: string
+  location_city: string | null
+  location_state: string
+  type: 'supercross' | 'motocross' | 'practice'
+  description: string | null
+  website: string | null
+  phone: string | null
+  image_url: string | null
+  latitude: number | null
+  longitude: number | null
+  approved: boolean
+  created_at: string
+  updated_at: string
+  // Joined
+  tracks?: Track[]
+}
+
 export interface Track {
   id: string
   name: string
@@ -27,6 +46,8 @@ export interface Track {
   start_lng: number | null
   finish_lat: number | null
   finish_lng: number | null
+  venue_id: string | null
+  layout_name: string
   created_at: string
 }
 

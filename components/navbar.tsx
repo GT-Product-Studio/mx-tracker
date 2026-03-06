@@ -7,7 +7,7 @@ import { createClient } from '@/lib/supabase'
 import type { User } from '@supabase/supabase-js'
 
 const navLinks = [
-  { href: '/tracks', label: 'Tracks' },
+  { href: '/tracks', label: 'Venues' },
   { href: '/leaderboard', label: 'Leaderboard' },
   { href: '/challenges', label: 'Challenges' },
 ]
