@@ -433,14 +433,14 @@ export function ChaseThePros({ proTimes }: { proTimes: ProTimePreview[] }) {
           <div className="flex items-end justify-between mb-10">
             <div>
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold mb-2">
-                Chase the Pros
+                Deegan&apos;s Fastest
               </p>
               <h2 className="font-heading text-3xl font-bold sm:text-4xl">
-                How close can you get?
+                Can you beat these times?
               </h2>
             </div>
             <Link href="/leaderboard" className="text-sm text-text-muted hover:text-accent transition-colors hidden sm:block">
-              Full leaderboard →
+              All Deegan times →
             </Link>
           </div>
         </FadeInView>
@@ -452,18 +452,13 @@ export function ChaseThePros({ proTimes }: { proTimes: ProTimePreview[] }) {
               className={`flex items-center justify-between p-4 ${i < proTimes.length - 1 && i < 4 ? 'border-b border-border/50' : ''}`}
             >
               <div className="flex items-center gap-4">
-                <span className="w-8 text-center text-lg" style={{ color: getRankColor(i + 1) }}>
-                  {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`}
-                </span>
+                <span className="font-mono text-sm text-text-muted w-6 text-center">{i + 1}</span>
                 <div>
-                  <p className="text-sm font-bold text-gold">{pt.rider_name}</p>
-                  <p className="text-xs text-text-muted">{pt.venues?.name} · {pt.event_name}</p>
+                  <p className="text-sm font-bold text-text">{pt.venues?.name}</p>
+                  <p className="text-xs text-text-muted">{pt.event_name} · {pt.bike_class.toUpperCase()}</p>
                 </div>
               </div>
-              <div className="text-right">
-                <span className="font-mono text-lg font-bold text-gold">{formatLapTime(pt.lap_time_ms)}</span>
-                <p className="text-[10px] text-text-muted uppercase">{pt.bike_class}</p>
-              </div>
+              <span className="font-mono text-lg font-bold text-gold">{formatLapTime(pt.lap_time_ms)}</span>
             </div>
           ))}
         </div>
@@ -472,7 +467,7 @@ export function ChaseThePros({ proTimes }: { proTimes: ProTimePreview[] }) {
           <div className="mt-6 rounded-xl border border-accent/20 bg-card p-6 text-center">
             <p className="text-text-muted mb-1">You are</p>
             <p className="font-mono text-3xl font-bold text-accent">??:??.???</p>
-            <p className="text-text-muted mt-1">off Haiden Deegan&apos;s pace</p>
+            <p className="text-text-muted mt-1">off Deegan&apos;s pace</p>
             <Link href="/signup" className="mt-4 inline-block text-sm font-bold text-accent hover:underline">
               Log a lap to find out →
             </Link>

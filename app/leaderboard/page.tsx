@@ -2,13 +2,12 @@
 
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase'
-import { formatLapTime, getRankColor } from '@/lib/utils'
+import { formatLapTime } from '@/lib/utils'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import type { Lap } from '@/lib/types'
 
-type ProTimeRow = {
+type DeeganTime = {
   id: string
   rider_name: string
   lap_time_ms: number
@@ -16,260 +15,203 @@ type ProTimeRow = {
   event_name: string | null
   event_date: string | null
   venue_id: string | null
+  source: string | null
+  venues?: { name: string; location_state: string } | null
 }
 
-type VenueOption = { id: string; name: string; location_state: string }
-
 export default function LeaderboardPage() {
-  const [laps, setLaps] = useState<Lap[]>([])
-  const [proTimes, setProTimes] = useState<ProTimeRow[]>([])
-  const [venues, setVenues] = useState<VenueOption[]>([])
-  const [tab, setTab] = useState<'global' | 'track' | 'state'>('global')
-  const [venueFilter, setVenueFilter] = useState('')
-  const [stateFilter, setStateFilter] = useState('')
-  const [bikeFilter, setBikeFilter] = useState('')
+  const [deeganTimes, setDeeganTimes] = useState<DeeganTime[]>([])
+  const [classFilter, setClassFilter] = useState<'all' | '250f' | '450f'>('all')
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
 
   useEffect(() => {
     async function load() {
-      const [{ data: lapsData }, { data: proTimesData }, { data: venuesData }] = await Promise.all([
-        supabase
-          .from('laps')
-          .select('*, profiles(display_name), tracks(name, location_state, venue_id)')
-          .order('time_ms', { ascending: true })
-          .limit(500),
-        supabase
-          .from('pro_times')
-          .select('*')
-          .order('lap_time_ms', { ascending: true }),
-        supabase
-          .from('venues')
-          .select('id, name, location_state')
-          .eq('approved', true)
-          .order('name'),
-      ])
-      if (lapsData) setLaps(lapsData)
-      if (proTimesData) setProTimes(proTimesData)
-      if (venuesData) setVenues(venuesData)
+      const { data } = await supabase
+        .from('pro_times')
+        .select('*, venues(name, location_state)')
+        .eq('rider_name', 'Haiden Deegan')
+        .order('lap_time_ms', { ascending: true })
+
+      if (data) setDeeganTimes(data)
       setLoading(false)
     }
     load()
   }, [])
 
-  // Unique states
-  const states = [...new Set(venues.map((v) => v.location_state))].sort()
+  const filtered = classFilter === 'all'
+    ? deeganTimes
+    : deeganTimes.filter((t) => t.bike_class === classFilter)
 
-  // Filter laps
-  const filteredLaps = laps.filter((lap) => {
-    if (bikeFilter && lap.bike_class !== bikeFilter) return false
-    if (tab === 'track' && venueFilter) {
-      const trackVenueId = (lap.tracks as any)?.venue_id
-      if (trackVenueId !== venueFilter) return false
-    }
-    if (tab === 'state' && stateFilter) {
-      if (lap.tracks?.location_state !== stateFilter) return false
-    }
-    return true
-  })
+  // Best time for the "gap" CTA
+  const fastest = filtered.length > 0 ? filtered[0] : null
 
-  // Dedupe by user
-  const seen = new Set<string>()
-  const uniqueLaps = filteredLaps.filter((lap) => {
-    if (seen.has(lap.user_id)) return false
-    seen.add(lap.user_id)
-    return true
-  }).slice(0, 50)
-
-  // Pro times for selected venue
-  const filteredProTimes = tab === 'track' && venueFilter
-    ? proTimes.filter((pt) => pt.venue_id === venueFilter && (!bikeFilter || pt.bike_class === bikeFilter))
-    : []
-
-  // Fastest pro time for gap calculation
-  const fastestPro = filteredProTimes.length > 0 ? filteredProTimes[0] : null
-
-  const bikeOptions = [
-    { value: '', label: 'All Classes' },
-    { value: '250f', label: '250F' },
-    { value: '450f', label: '450F' },
-    { value: '125', label: '125' },
-    { value: '85', label: '85' },
-  ]
+  // Season stats
+  const totalRounds = new Set(deeganTimes.map((t) => t.event_name)).size
+  const fastestOverall = deeganTimes.length > 0 ? deeganTimes[0] : null
 
   if (loading) return <div className="flex min-h-screen items-center justify-center text-text-muted">Loading...</div>
 
   return (
     <div>
-      {/* Hero banner */}
-      <div className="relative h-48 overflow-hidden">
+      {/* Hero banner with Deegan */}
+      <div className="relative h-64 sm:h-72 overflow-hidden">
         <Image
           src="/images/deegan/deegan-sx-9.jpg"
-          alt="Supercross racing"
+          alt="Haiden Deegan racing"
           fill
           priority
           quality={100}
-          className="object-cover object-center"
+          className="object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/60 to-bg/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
         <div className="relative z-10 flex h-full items-end pb-8 px-4">
           <div className="mx-auto w-full max-w-5xl">
-            <h1 className="font-heading text-4xl font-bold">Leaderboard</h1>
-            <p className="text-text-muted text-sm mt-1">See where you stand against riders and pros</p>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-accent mb-2">Chase the Pros</p>
+            <h1 className="font-heading text-4xl sm:text-5xl font-bold">
+              Haiden Deegan<span className="text-accent">&apos;s</span> Times
+            </h1>
+            <p className="text-text-muted text-sm mt-2 max-w-lg">
+              Real qualifying lap times from the 2025 AMA Pro Motocross Championship. Every time sourced from official race results.
+            </p>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-5xl px-4 py-8">
-        {/* Tabs */}
-        <div className="flex gap-1 mb-6 rounded-lg bg-card border border-border p-1 w-fit">
-          {(['global', 'track', 'state'] as const).map((t) => (
+        {/* Season summary strip */}
+        <div className="grid grid-cols-3 gap-4 mb-8">
+          {[
+            { value: '7', label: 'Wins (of 11)', sub: '2025 250MX' },
+            { value: fastestOverall ? formatLapTime(fastestOverall.lap_time_ms) : '--', label: 'Fastest Lap', sub: fastestOverall?.venues?.name || '' },
+            { value: `${totalRounds}`, label: 'Tracks with Times', sub: 'AMA Pro Motocross' },
+          ].map((stat, i) => (
+            <motion.div
+              key={stat.label}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.1 }}
+              className="rounded-xl border border-border bg-card p-4 sm:p-6 text-center"
+            >
+              <p className="font-mono text-2xl sm:text-3xl font-bold text-accent">{stat.value}</p>
+              <p className="text-xs font-bold text-text mt-1">{stat.label}</p>
+              <p className="text-[10px] text-text-muted mt-0.5">{stat.sub}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Class filter */}
+        <div className="flex gap-2 mb-6">
+          {([['all', 'All Classes'], ['250f', '250F'], ['450f', '450F']] as const).map(([val, label]) => (
             <button
-              key={t}
-              onClick={() => setTab(t)}
-              className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
-                tab === t ? 'bg-accent text-black' : 'text-text-muted hover:text-text'
+              key={val}
+              onClick={() => setClassFilter(val)}
+              className={`rounded-lg px-4 py-2 text-xs font-bold transition-colors ${
+                classFilter === val
+                  ? 'bg-accent text-black'
+                  : 'bg-card text-text-muted hover:text-text border border-border'
               }`}
             >
-              {t === 'global' ? 'Global' : t === 'track' ? 'By Track' : 'By State'}
+              {label}
             </button>
           ))}
         </div>
 
-        {/* Filters */}
-        <div className="flex flex-col sm:flex-row gap-3 mb-6">
-          {tab === 'track' && (
-            <select
-              value={venueFilter}
-              onChange={(e) => setVenueFilter(e.target.value)}
-              className="sm:w-64 rounded-lg border border-border bg-card px-4 py-2 text-sm text-text"
-            >
-              <option value="">Select a venue...</option>
-              {venues.map((v) => (
-                <option key={v.id} value={v.id}>{v.name} — {v.location_state}</option>
-              ))}
-            </select>
-          )}
-          {tab === 'state' && (
-            <select
-              value={stateFilter}
-              onChange={(e) => setStateFilter(e.target.value)}
-              className="sm:w-48 rounded-lg border border-border bg-card px-4 py-2 text-sm text-text"
-            >
-              <option value="">All States</option>
-              {states.map((s) => (
-                <option key={s} value={s}>{s}</option>
-              ))}
-            </select>
-          )}
-          <div className="flex gap-2 flex-wrap">
-            {bikeOptions.map((opt) => (
-              <button
-                key={opt.value}
-                onClick={() => setBikeFilter(opt.value)}
-                className={`rounded-lg px-3 py-2 text-xs font-medium transition-colors ${
-                  bikeFilter === opt.value ? 'bg-accent text-black' : 'bg-card text-text-muted hover:text-text border border-border'
-                }`}
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Pro Times Section (only for By Track with venue selected) */}
-        {filteredProTimes.length > 0 && (
-          <div className="rounded-xl border border-gold/20 bg-card overflow-hidden mb-6">
-            <div className="px-4 py-3 border-b border-gold/10">
-              <h2 className="font-heading text-lg font-bold text-gold">Pro Times</h2>
+        {/* Deegan's times list */}
+        <div className="rounded-xl border border-gold/20 bg-card overflow-hidden mb-8">
+          <div className="px-4 py-3 border-b border-gold/10 flex items-center gap-3">
+            <div className="relative w-8 h-8 rounded-full overflow-hidden ring-2 ring-gold/30">
+              <Image
+                src="/images/deegan/deegan-portrait.jpg"
+                alt="Haiden Deegan"
+                fill
+                quality={100}
+                className="object-cover object-top"
+              />
             </div>
-            {filteredProTimes.map((pt, i) => (
-              <div
+            <div>
+              <h2 className="font-heading text-lg font-bold text-gold">Haiden Deegan</h2>
+              <p className="text-[10px] text-text-muted">2x AMA Pro Motocross 250 Champion · Monster Energy Yamaha Star Racing</p>
+            </div>
+          </div>
+
+          {filtered.length > 0 ? (
+            filtered.map((pt, i) => (
+              <motion.div
                 key={pt.id}
-                className={`flex items-center justify-between px-4 py-3 ${i < filteredProTimes.length - 1 ? 'border-b border-border/30' : ''}`}
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.04 }}
+                className={`flex items-center justify-between px-4 py-4 ${i < filtered.length - 1 ? 'border-b border-border/30' : ''} hover:bg-card-hover transition-colors`}
               >
-                <div className="flex items-center gap-3">
-                  <span className="w-8 text-center text-sm">
-                    {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `#${i + 1}`}
+                <div className="flex items-center gap-4">
+                  <span className="w-8 text-center font-mono text-sm text-text-muted">
+                    {i + 1}
                   </span>
                   <div>
-                    <p className="text-sm font-bold text-gold">{pt.rider_name}</p>
-                    <p className="text-[10px] text-text-muted">{pt.event_name}{pt.event_date ? `, ${new Date(pt.event_date).toLocaleDateString('en-US', { month: 'short', year: 'numeric' })}` : ''}</p>
+                    <Link
+                      href={pt.venue_id ? `/venues/${pt.venue_id}` : '#'}
+                      className="text-sm font-bold text-text hover:text-accent transition-colors"
+                    >
+                      {pt.venues?.name || 'Unknown Venue'}
+                    </Link>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-[10px] text-text-muted">
+                        {pt.event_name}
+                      </span>
+                      {pt.event_date && (
+                        <span className="text-[10px] text-text-muted">
+                          · {new Date(pt.event_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                        </span>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <span className="text-xs text-text-muted uppercase">{pt.bike_class}</span>
-                  <span className="font-mono text-sm font-bold text-gold">{formatLapTime(pt.lap_time_ms)}</span>
+                  <span className="rounded-full border border-border px-2 py-0.5 text-[10px] font-medium text-text-muted uppercase">
+                    {pt.bike_class}
+                  </span>
+                  <span className="font-mono text-lg font-bold text-gold min-w-[100px] text-right">
+                    {formatLapTime(pt.lap_time_ms)}
+                  </span>
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Rider Rankings */}
-        <div className="rounded-xl border border-border bg-card overflow-hidden mb-12">
-          <div className="px-4 py-3 border-b border-border">
-            <h2 className="font-heading text-lg font-bold">
-              {tab === 'global' ? 'Global' : tab === 'track' && venueFilter ? venues.find(v => v.id === venueFilter)?.name || 'Track' : tab === 'state' && stateFilter ? stateFilter : 'All'} Rankings
-            </h2>
-          </div>
-          <table className="w-full">
-            <thead>
-              <tr className="border-b border-border text-xs text-text-muted uppercase">
-                <th className="px-4 py-3 text-left w-12">#</th>
-                <th className="px-4 py-3 text-left">Rider</th>
-                <th className="px-4 py-3 text-left hidden sm:table-cell">Track</th>
-                <th className="px-4 py-3 text-right">Best Time</th>
-                {fastestPro && <th className="px-4 py-3 text-right hidden sm:table-cell">Gap to Pro</th>}
-                <th className="px-4 py-3 text-right hidden sm:table-cell">Class</th>
-              </tr>
-            </thead>
-            <tbody>
-              {uniqueLaps.map((lap, i) => {
-                const gap = fastestPro ? lap.time_ms - fastestPro.lap_time_ms : null
-                return (
-                  <motion.tr
-                    key={lap.id}
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: i * 0.02 }}
-                    className="border-b border-border/50 last:border-0 hover:bg-card-hover transition-colors"
-                  >
-                    <td className="px-4 py-3">
-                      <span className="text-sm font-bold" style={{ color: getRankColor(i + 1) }}>
-                        {i + 1}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3">
-                      <Link href={`/profile/${encodeURIComponent(lap.profiles?.display_name || '')}`} className="text-sm font-medium hover:text-accent transition-colors">
-                        {lap.profiles?.display_name || 'Unknown'}
-                      </Link>
-                    </td>
-                    <td className="px-4 py-3 hidden sm:table-cell">
-                      <span className="text-sm text-text-muted">{lap.tracks?.name}</span>
-                    </td>
-                    <td className="px-4 py-3 text-right">
-                      <span className="font-mono text-sm font-bold text-accent">{formatLapTime(lap.time_ms)}</span>
-                    </td>
-                    {fastestPro && (
-                      <td className="px-4 py-3 text-right hidden sm:table-cell">
-                        <span className="font-mono text-xs text-text-muted">
-                          +{(gap! / 1000).toFixed(1)}s off {fastestPro.rider_name.split(' ').pop()}
-                        </span>
-                      </td>
-                    )}
-                    <td className="px-4 py-3 text-right text-xs text-text-muted uppercase hidden sm:table-cell">{lap.bike_class}</td>
-                  </motion.tr>
-                )
-              })}
-            </tbody>
-          </table>
-          {uniqueLaps.length === 0 && (
-            <p className="p-8 text-center text-text-muted">
-              {tab === 'track' && !venueFilter ? 'Select a venue to see rankings' : 'No laps recorded yet. Be the first!'}
-            </p>
+              </motion.div>
+            ))
+          ) : (
+            <div className="p-8 text-center text-text-muted">
+              No times recorded for this class yet.
+            </div>
           )}
         </div>
+
+        {/* "How close are you?" CTA */}
+        {fastest && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="rounded-xl border border-accent/20 bg-card p-8 text-center"
+          >
+            <p className="text-text-muted mb-1 text-sm">Can you beat Deegan&apos;s</p>
+            <p className="font-mono text-4xl sm:text-5xl font-bold text-gold">
+              {formatLapTime(fastest.lap_time_ms)}
+            </p>
+            <p className="text-text-muted mt-1 text-sm">
+              at {fastest.venues?.name || 'the track'}?
+            </p>
+            <Link
+              href="/signup"
+              className="mt-6 inline-block rounded-lg bg-accent px-8 py-3 text-sm font-bold text-black hover:bg-accent-hover transition-colors"
+            >
+              Log Your Time & Find Out
+            </Link>
+          </motion.div>
+        )}
+
+        {/* Source attribution */}
+        <p className="mt-8 text-center text-[10px] text-text-muted/50">
+          All times from official 2025 AMA Pro Motocross qualifying results · Source: NBC Sports
+        </p>
       </div>
     </div>
   )

@@ -27,6 +27,7 @@ export default async function HomePage() {
     supabase
       .from('pro_times')
       .select('*, venues(name)')
+      .eq('rider_name', 'Haiden Deegan')
       .order('lap_time_ms', { ascending: true })
       .limit(5),
     supabase
