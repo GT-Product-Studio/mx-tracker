@@ -36,8 +36,8 @@ export interface Lap {
   track_id: string
   time_ms: number
   date: string
-  conditions: 'dry' | 'muddy' | 'wet' | 'mixed' | null
-  bike_class: '125' | '250f' | '250' | '450f' | '450' | 'open' | 'other' | null
+  conditions: 'dry' | 'muddy' | 'wet' | 'sandy' | null
+  bike_class: '125' | '85' | '250f' | '450f' | '250-2stroke' | '450-2stroke' | null
   video_url: string | null
   is_personal_best: boolean
   notes: string | null

@@ -72,7 +72,7 @@ export function Navbar() {
           {user ? (
             <div className="flex items-center gap-4">
               <Link
-                href={`/profile/edit`}
+                href="/profile"
                 className="text-sm font-medium text-text-muted hover:text-text transition-colors"
               >
                 Profile
@@ -132,7 +132,7 @@ export function Navbar() {
             ))}
             {user ? (
               <>
-                <Link href="/profile/edit" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-text-muted">Profile</Link>
+                <Link href="/profile" onClick={() => setMenuOpen(false)} className="text-sm font-medium text-text-muted">Profile</Link>
                 <button onClick={handleSignOut} className="text-left text-sm font-medium text-text-muted">Sign Out</button>
               </>
             ) : (
