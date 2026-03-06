@@ -43,8 +43,8 @@ export default async function HomePage() {
     <div>
       <Hero isLoggedIn={!!user} />
       <HowItWorks />
-      <ChaseThePros proTimes={proTimes || []} />
       <RankingSystem />
+      <ChaseThePros proTimes={proTimes || []} />
       <DangerBoySection />
       <TrackFinderPreview venues={venues || []} />
       {!user && <BottomCTA />}
