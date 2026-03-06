@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 70" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 70" fill="none">
   <!-- Underline bar — Deegan neon green -->
-  <rect x="0" y="58" width="280" height="8" rx="1" fill="#29F000"/>
+  <rect x="0" y="58" width="270" height="8" rx="1" fill="#29F000"/>
   <!-- Main text -->
   <text x="2" y="50" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-style="italic" font-size="58" fill="white" letter-spacing="-1" transform="skewX(-6)">BRAAP</text>
-  <!-- Exhaust dots -->
-  <circle cx="245" cy="32" r="6" fill="#29F000"/>
-  <circle cx="257" cy="24" r="4.5" fill="#29F000" opacity="0.7"/>
-  <circle cx="266" cy="17" r="3" fill="#29F000" opacity="0.45"/>
-  <circle cx="273" cy="12" r="1.8" fill="#29F000" opacity="0.25"/>
+  <!-- Exhaust dots — tighter to text -->
+  <circle cx="232" cy="32" r="6" fill="#29F000"/>
+  <circle cx="243" cy="24" r="4.5" fill="#29F000" opacity="0.7"/>
+  <circle cx="251" cy="17" r="3" fill="#29F000" opacity="0.45"/>
+  <circle cx="257" cy="12" r="1.8" fill="#29F000" opacity="0.25"/>
 </svg>
