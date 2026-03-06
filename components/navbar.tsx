@@ -34,8 +34,9 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
-        <Link href="/" className="font-heading text-2xl font-bold italic tracking-tight text-accent">
-          BRAAP
+        <Link href="/" className="flex items-baseline gap-2">
+          <span className="font-heading text-3xl font-bold italic tracking-tight text-accent">BRAAP</span>
+          <span className="text-xs font-medium text-text-muted">by Haiden Deegan</span>
         </Link>
 
         {/* Desktop Nav */}
