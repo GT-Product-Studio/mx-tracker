@@ -556,7 +556,7 @@ const RANKS = [
   { tier: 'Silver', emoji: '⚪', range: '6–15 wins', xp: '500–1,500 XP', color: '#C0C0C0', desc: 'Proven competitor' },
   { tier: 'Gold', emoji: '🟡', range: '16–30 wins', xp: '1,500–3,000 XP', color: '#FFD700', desc: 'Track regular' },
   { tier: 'Diamond', emoji: '💎', range: '31–50 wins', xp: '3,000–5,000 XP', color: '#B9F2FF', desc: 'Elite rider' },
-  { tier: 'Pro', emoji: '🏆', range: '50+ wins', xp: '5,000+ XP', color: '#00D26A', desc: 'Legend status' },
+  { tier: 'Pro', emoji: '🏆', range: '50+ wins', xp: '5,000+ XP', color: '#29F000', desc: 'Legend status' },
 ]
 
 const XP_ACTIONS = [

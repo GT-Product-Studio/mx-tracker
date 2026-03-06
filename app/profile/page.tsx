@@ -13,7 +13,7 @@ const RANK_DISPLAY: Record<string, { emoji: string; label: string; color: string
   silver: { emoji: '⚪', label: 'Silver', color: '#C0C0C0' },
   gold: { emoji: '🟡', label: 'Gold', color: '#FFD700' },
   diamond: { emoji: '💎', label: 'Diamond', color: '#B9F2FF' },
-  pro: { emoji: '🏆', label: 'Pro', color: '#00D26A' },
+  pro: { emoji: '🏆', label: 'Pro', color: '#29F000' },
 }
 
 type BattleRow = {

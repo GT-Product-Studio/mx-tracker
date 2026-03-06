@@ -4,8 +4,8 @@
   --color-bg: #0A0A0A;
   --color-card: #141414;
   --color-card-hover: #1a1a1a;
-  --color-accent: #00D26A;
-  --color-accent-hover: #00b85c;
+  --color-accent: #29F000;
+  --color-accent-hover: #22D400;
   --color-gold: #FFD700;
   --color-silver: #C0C0C0;
   --color-bronze: #CD7F32;
@@ -42,7 +42,7 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-  border-color: #00D26A;
+  border-color: #29F000;
 }
 
 input::placeholder, textarea::placeholder {
