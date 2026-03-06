@@ -200,7 +200,8 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <BraapLogo className="mb-6" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto mb-6" />
           </motion.div>
 
           <motion.p
