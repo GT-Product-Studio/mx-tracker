@@ -176,10 +176,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <div className="flex items-baseline gap-3 mb-6">
-              <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto" />
-              <span className="text-xs font-medium uppercase tracking-wider text-text-muted">Powered by Haiden Deegan</span>
-            </div>
+            <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto mb-6" />
           </motion.div>
 
           <motion.p
