@@ -7,6 +7,31 @@ import { motion } from 'framer-motion'
 import { FadeInView, SlideInLeft, ScaleIn } from '@/components/motion'
 import { formatLapTime, getRankColor } from '@/lib/utils'
 
+/* ---------- Braap Logo (inline, no SVG text rendering issues) ---------- */
+function BraapLogo({ className = '' }: { className?: string }) {
+  return (
+    <div className={`relative inline-block ${className}`}>
+      <div className="relative">
+        <span
+          className="block text-[4rem] font-black italic leading-none tracking-tight text-white"
+          style={{ fontFamily: "'Arial Black', 'Impact', sans-serif", transform: 'skewX(-6deg)' }}
+        >
+          BRAAP
+        </span>
+        {/* Exhaust dots */}
+        <div className="absolute -right-2 top-1 flex items-center gap-[3px]" style={{ transform: 'rotate(-25deg)' }}>
+          <span className="block h-3 w-3 rounded-full bg-accent" />
+          <span className="block h-2.5 w-2.5 rounded-full bg-accent opacity-70" />
+          <span className="block h-1.5 w-1.5 rounded-full bg-accent opacity-45" />
+          <span className="block h-1 w-1 rounded-full bg-accent opacity-25" />
+        </div>
+      </div>
+      {/* Underline */}
+      <div className="mt-1 h-[5px] w-full rounded-sm bg-accent" />
+    </div>
+  )
+}
+
 const HERO_REELS = [
   { src: '/images/deegan/deegan-hero.mp4', poster: '/images/deegan/deegan-hero-poster.jpg' },
   { src: '/images/deegan/deegan-section.mp4', poster: '/images/deegan/deegan-section-poster.jpg' },
@@ -175,8 +200,7 @@ export function Hero({ isLoggedIn }: { isLoggedIn: boolean }) {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/braap-logo-v2.svg" alt="Braap" className="h-16 w-auto mb-6" />
+            <BraapLogo className="mb-6" />
           </motion.div>
 
           <motion.p
