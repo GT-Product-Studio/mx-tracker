@@ -82,6 +82,9 @@ export default async function VenueDetailPage({ params }: { params: Promise<{ id
             >
               <div>
                 <h3 className="font-medium text-sm">{track.layout_name}</h3>
+                {track.description && (
+                  <p className="text-xs text-text-muted mt-0.5">{track.description}</p>
+                )}
                 {track.difficulty && (
                   <DifficultyBadge difficulty={track.difficulty} />
                 )}
